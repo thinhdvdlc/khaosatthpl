@@ -1,0 +1,49 @@
+nameOverride: "app"                                # ĐỔI = slug dự án (vd myapp)
+replicaCount: 2
+
+image:
+  repository: registry.smartcloud.vn/<team>/<slug>  # VNPT Container Registry
+  tag: latest
+  pullPolicy: IfNotPresent
+
+imagePullSecrets:
+  - name: registry-cred
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080                                  # cổng app nghe trong container
+
+ingress:
+  enabled: true
+  className: nginx
+  host: <slug>.<team>.smartcloud.vn
+  tls: false
+
+healthPath: /health
+
+resources:
+  requests: { cpu: 100m, memory: 256Mi }
+  limits:   { cpu: "1",  memory: 1Gi }
+
+# Env non-secret (ConfigMap) — điền theo stack
+config:
+  # ASPNETCORE_ENVIRONMENT: "Production"   # .NET
+  # NODE_ENV: "production"                 # Node
+  {}
+
+# Env secret — nên dùng existingSecret trên prod (đừng commit giá trị thật)
+existingSecret: ""
+secretData:
+  # .NET:  ConnectionStrings__Default / ConnectionStrings__Redis
+  # Node/Python:  DATABASE_URL / REDIS_URL
+  # chung: SEED_USER_EMAIL / SEED_USER_PASSWORD
+  {}
+
+# Job migrate+seed chạy 1 lần mỗi install/upgrade (Helm hook). Script theo stack:
+#   .NET:   "dotnet App.Web.dll --seed"
+#   Node:   "npx prisma migrate deploy && node dist/seed.js"
+#   Python: "uv run alembic upgrade head && uv run python -m app.seed"
+migrate:
+  enabled: true
+  script: "dotnet App.Web.dll --seed"

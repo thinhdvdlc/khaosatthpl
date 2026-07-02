@@ -1,0 +1,9 @@
+# Ép LF cho mọi file text — script bash/hook PHẢI là LF, nếu CRLF sẽ hỏng trong WSL/Linux.
+* text=auto eol=lf
+
+# Nhị phân
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+*.woff* binary

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>__PROJECT__ — Cẩm nang phát triển</title>
+<style>
+  :root{--green:#0a7d4b;--green-d:#075e39;--ink:#1c2430;--muted:#5b6675;--bg:#f5f7fa;--card:#fff;--line:#e3e8ef;--code:#0f172a;--codetx:#e2e8f0;--amber:#b7791f;--blue:#2563eb;--red:#c0392b;--gray:#8895a7}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:15.5px}
+  a{color:var(--green-d);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{display:grid;grid-template-columns:250px 1fr;max-width:1180px;margin:0 auto}
+  aside{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;border-right:1px solid var(--line);background:#fff;padding:22px 16px}
+  aside .brand{font-weight:800;color:var(--green-d);font-size:18px}
+  aside .brand small{display:block;font-weight:500;color:var(--muted);font-size:12px;margin-top:4px}
+  aside nav{margin-top:16px;font-size:14px}
+  aside nav a{display:block;padding:6px 10px;border-radius:7px;color:var(--ink)}
+  aside nav a:hover{background:#eef6f1}aside nav a.sub{padding-left:20px;color:var(--muted);font-size:13px}
+  aside nav a.active{background:var(--green);color:#fff}
+  aside nav .grp{margin-top:14px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gray);padding:0 10px}
+  main{padding:32px 40px 90px;max-width:900px}
+  header.hero{background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;border-radius:16px;padding:26px 30px;margin-bottom:24px}
+  header.hero h1{margin:0 0 6px;font-size:25px}header.hero p{margin:0;opacity:.92}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:20px}
+  h2{font-size:21px;margin:.1em 0 .5em;color:var(--green-d);border-bottom:2px solid #eef2f6;padding-bottom:8px}
+  h3{font-size:16.5px;margin:1.2em 0 .4em}h4{font-size:14.5px;margin:1em 0 .3em;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;margin:.7em 0;font-size:14px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f0f5f2;color:var(--green-d);font-weight:600}
+  code{background:#eef2f6;color:#0b3b26;padding:1.5px 6px;border-radius:5px;font-family:ui-monospace,Consolas,monospace;font-size:.9em}
+  pre{position:relative;background:var(--code);color:var(--codetx);border-radius:10px;padding:15px 16px;overflow:auto;font-size:13px;line-height:1.55}
+  pre code{background:none;color:inherit;padding:0}
+  pre .cp{position:absolute;top:8px;right:8px;background:#334155;color:#fff;border:0;border-radius:6px;padding:3px 9px;font-size:11px;cursor:pointer;opacity:.85}
+  pre .cp:hover{opacity:1}
+  .note{border-left:4px solid var(--green);background:#f0f8f3;padding:10px 14px;border-radius:0 8px 8px 0;margin:.8em 0}
+  .warn{border-left:4px solid var(--amber);background:#fdf6ec;padding:10px 14px;border-radius:0 8px 8px 0;margin:.8em 0}
+  .bad{border-left:4px solid var(--red);background:#fdeeec;padding:10px 14px;border-radius:0 8px 8px 0;margin:.8em 0}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .pill{display:inline-block;padding:2px 9px;border-radius:20px;font-size:12px;font-weight:600;color:#fff}
+  .p-green{background:var(--green)}.p-blue{background:var(--blue)}.p-amber{background:var(--amber)}.p-gray{background:var(--gray)}.p-red{background:var(--red)}
+  .flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:.6em 0;font-size:12.5px}
+  .flow span{background:#eef2f6;border:1px solid var(--line);border-radius:6px;padding:4px 8px}
+  .flow .arr{color:var(--gray)}
+  footer{color:var(--muted);font-size:12.5px;text-align:center;padding:20px}
+  @media(max-width:860px){.wrap{grid-template-columns:1fr}aside{display:none}main{padding:20px}.grid2{grid-template-columns:1fr}}
+  @media print{aside{display:none}.wrap{display:block}pre .cp{display:none}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<aside>
+  <div class="brand">__PROJECT__<small>Cẩm nang phát triển</small></div>
+  <nav id="toc">
+    <div class="grp">Bắt đầu</div>
+    <a href="#tongquan">Tổng quan</a>
+    <a href="#moitruong">0 · Môi trường</a>
+    <div class="grp">A · Code &amp; Build</div>
+    <a href="#init" class="sub">Khởi tạo &amp; build</a>
+    <a href="#deploy" class="sub">Deploy SmartCloud</a>
+    <div class="grp">B · Prompt</div>
+    <a href="#prompt-nt" class="sub">Nguyên tắc</a>
+    <a href="#prompt-ct" class="sub">Cấu trúc &amp; ví dụ</a>
+    <a href="#prompt-vt" class="sub">Theo vai trò</a>
+    <div class="grp">C · Lanes</div>
+    <a href="#dashboard" class="sub">Dashboard &amp; màu</a>
+    <a href="#lanecard" class="sub">Nút &amp; song song</a>
+    <a href="#cli" class="sub">CLI &amp; sự cố</a>
+  </nav>
+</aside>
+<main>
+<header class="hero">
+  <h1>Cẩm nang phát triển __PROJECT__</h1>
+  <p>Khởi tạo &amp; build → quy chuẩn prompt → theo dõi lane/workflow. Harness dùng chung (shipyard), profile <code>__SLUG__</code>.</p>
+</header>
+
+<section id="tongquan">
+  <h2>Tổng quan</h2>
+  <table>
+    <tr><th>Khối</th><th>Là gì</th><th>Ở đâu</th></tr>
+    <tr><td><b>App</b></td><td>__PROJECT__ (chạy trên Postgres + Redis qua docker-compose)</td><td><code>~/work/__SLUG__</code></td></tr>
+    <tr><td><b>Harness</b></td><td>Shipyard — chạy nhiều feature song song, gate + QC + dashboard</td><td><code>~/work/harness</code></td></tr>
+    <tr><td><b>Lanes</b></td><td>Bản sao app cách ly (port/DB/Redis riêng)</td><td><code>~/work/lane1..N</code></td></tr>
+  </table>
+  <div class="flow"><span>ý tưởng</span><b class="arr">→</b><span>/ship-feature</span><b class="arr">→</b><span>plan</span><b class="arr">→</b><span>implement</span><b class="arr">→</b><span>CI gate</span><b class="arr">→</b><span>e2e</span><b class="arr">→</b><span>integrate</span><b class="arr">→</b><span>review</span><b class="arr">→</b><span>QC</span><b class="arr">→</b><span>GO/NO-GO</span><b class="arr">→</b><span>mở MR</span><b class="arr">→</b><span>tới merge</span></div>
+</section>
+
+<section id="moitruong">
+  <h2>0 · Môi trường (một lần)</h2>
+  <pre><button class="cp">Copy</button><code>wsl --install -d Ubuntu     # PowerShell (admin), rồi restart</code></pre>
+  <p>Trong Ubuntu cài: toolchain của stack (.NET 8 / Node ≥18 / Python 3.12…), <b>Docker</b>, <b>glab</b> (<code>glab auth login</code>), <b>python3</b>, <b>flock</b>, <b>Claude Code</b>.</p>
+  <pre><button class="cp">Copy</button><code>mkdir -p ~/work
+cp -r /mnt/f/harness/__SLUG__ ~/work/__SLUG__
+cp -r /mnt/f/harness/harness  ~/work/harness
+chmod +x ~/work/harness/bin/*.sh ~/work/harness/profiles/__SLUG__/hooks/*.sh</code></pre>
+</section>
+
+<section id="init">
+  <h2>A · Khởi tạo &amp; Build</h2>
+  <p>Lệnh cụ thể tuỳ stack — nguồn chuẩn là <b>7 hook</b> trong <code>harness/profiles/__SLUG__/hooks/</code> và bảng
+     <a href="../starter-kit/STACK-RECIPES.md">STACK-RECIPES.md</a>. Khung chung:</p>
+  <pre><button class="cp">Copy</button><code>cd ~/work/__SLUG__
+git init &amp;&amp; git add -A &amp;&amp; git commit -m "init"
+docker compose up -d          # Postgres + Redis (+ MinIO/adminer)
+# cài deps → migrate → seed → chạy → mở /health   (xem hooks/ của profile)</code></pre>
+  <table>
+    <tr><th>Hook</th><th>Việc</th></tr>
+    <tr><td>bootstrap</td><td>cài dependencies</td></tr>
+    <tr><td>migrate / seed</td><td>áp migration · seed user đầu</td></tr>
+    <tr><td>boot / health</td><td>build+chạy · kiểm <code>/health</code></td></tr>
+    <tr><td>ci-gate / e2e</td><td>lint+test · test end-to-end</td></tr>
+  </table>
+  <div class="warn">Trước khi push: chạy đúng lệnh format/lint của stack — CI gate sẽ kiểm.</div>
+</section>
+
+<section id="deploy">
+  <h2>A · Deploy (VNPT SmartCloud)</h2>
+  <div class="flow"><span>Dockerfile</span><b class="arr">→</b><span>image</span><b class="arr">→</b><span>Container Registry</span><b class="arr">→</b><span>Helm</span><b class="arr">→</b><span>VKS</span><b class="arr">→</b><span>Ingress</span></div>
+  <pre><button class="cp">Copy</button><code>docker build -t registry.smartcloud.vn/&lt;team&gt;/__SLUG__:dev .
+docker push registry.smartcloud.vn/&lt;team&gt;/__SLUG__:dev
+helm upgrade --install __SLUG__ deploy/helm -n __SLUG__ --create-namespace \
+  --set image.repository=registry.smartcloud.vn/&lt;team&gt;/__SLUG__ --set image.tag=dev \
+  --set existingSecret=__SLUG__-secret --wait</code></pre>
+  <div class="note">Managed: PostgreSQL · Redis · Object Storage S3 (<code>s3hn.smartcloud.vn</code>). CI/CD: push <code>development</code> → build image + <code>helm upgrade</code>.</div>
+</section>
+
+<section id="prompt-nt">
+  <h2>B · Quy chuẩn Prompt</h2>
+  <h3>Nguyên tắc "Context Engineering"</h3>
+  <ul>
+    <li><b>Vai trò:</b> BA / Dev / QA / DevOps.</li>
+    <li><b>Phạm vi cho phép/cấm:</b> file được đụng, việc không được làm.</li>
+    <li><b>Nguồn sự thật:</b> trỏ <code>docs/</code> (problem, PRD, architecture).</li>
+    <li><b>Definition of Done:</b> test · health · migration · evidence.</li>
+  </ul>
+</section>
+
+<section id="prompt-ct">
+  <h3>Cấu trúc &amp; ví dụ</h3>
+  <table><tr><th>Phần</th><th>Nội dung</th></tr>
+    <tr><td>Role</td><td>"Bạn là Dev…"</td></tr><tr><td>Context</td><td>bài toán + trỏ <code>docs/</code></td></tr>
+    <tr><td>Task</td><td>việc cụ thể</td></tr><tr><td>Constraints</td><td>allowed/blocked, ràng buộc stack</td></tr>
+    <tr><td>Done</td><td>test · /health · migration · evidence</td></tr></table>
+  <div class="grid2">
+    <div class="note"><b>✅ Nên</b><br>"Vai Dev. Theo <code>docs/03-architecture.md</code>, thêm endpoint X nhận Y, lưu Z. Chỉ sửa trong thư mục app. Done: unit test + migration + <code>/health</code> xanh."</div>
+    <div class="bad"><b>✕ Tránh</b><br>"Làm chức năng X cho tôi." (thiếu vai trò/phạm vi/tiêu chí → agent đoán mò)</div>
+  </div>
+  <h4><code>/ship-feature</code></h4>
+  <pre><button class="cp">Copy</button><code>/ship-feature "Thêm &lt;chức năng&gt;: &lt;làm gì&gt; cho &lt;ai&gt;, API &lt;method path&gt;,
+model &lt;entity&gt;. Ràng buộc: &lt;stack/nghiệp vụ&gt;. Có test + migration."</code></pre>
+</section>
+
+<section id="prompt-vt">
+  <h3>Prompt theo vai trò (BMAD)</h3>
+  <table>
+    <tr><th>Vai</th><th>Mục tiêu</th></tr>
+    <tr><td>BA/PM</td><td>làm rõ bài toán, user story, AC</td></tr>
+    <tr><td>Tech Lead/Dev</td><td>solution sketch, sinh code theo spec</td></tr>
+    <tr><td>QA/QC</td><td>test case positive/negative/edge, bug analysis</td></tr>
+    <tr><td>DevOps/SRE</td><td>pipeline, runbook, health/monitoring, rollback</td></tr>
+  </table>
+  <div class="note"><b>Quy tắc riêng dự án</b> (điền cho __PROJECT__): _(vd: engine AI dùng gì · driver DB · secret · ngôn ngữ giao diện · thư mục được sửa)._</div>
+</section>
+
+<section id="dashboard">
+  <h2>C · Theo dõi Lane &amp; Workflow</h2>
+  <pre><button class="cp">Copy</button><code>cd ~/work/harness
+bin/db-shared-up.sh &amp;&amp; bin/install-claude-assets.sh &amp;&amp; bin/dashboard.sh start   # → :8090</code></pre>
+  <h3>Pipeline map — màu</h3>
+  <table>
+    <tr><th>Màu</th><th>Ý nghĩa</th></tr>
+    <tr><td><span class="pill p-green">Xanh lá</span></td><td>Done</td></tr>
+    <tr><td><span class="pill p-blue">Xanh dương</span></td><td>Đang chạy</td></tr>
+    <tr><td><span class="pill p-amber">Hổ phách</span></td><td>Qua nhưng thiếu bằng chứng</td></tr>
+    <tr><td><span class="pill p-gray">Xám</span></td><td>Chưa tới</td></tr>
+    <tr><td><span class="pill p-red">Đỏ nét đứt</span></td><td>Fail → sửa rồi vào lại</td></tr>
+  </table>
+</section>
+
+<section id="lanecard">
+  <h3>Nút lane &amp; chạy song song</h3>
+  <table>
+    <tr><th>Nút</th><th>Tác dụng</th></tr>
+    <tr><td>▶ up / ■ down</td><td>Bật-rebuild / dừng lane</td></tr>
+    <tr><td>🧹 clear</td><td>Lưu trữ feature + reset ("xong feature này")</td></tr>
+    <tr><td>♻ agents / 🔑 creds</td><td>Đẩy lại template / đổi tài khoản QC (restart session sau đó)</td></tr>
+    <tr><td>⟳ reset / 🗑 remove</td><td>Seed lại / xoá hẳn lane</td></tr>
+  </table>
+  <div class="grid2">
+    <div><pre><button class="cp">Copy</button><code>cd ~/work/lane1 &amp;&amp; claude
+# /ship-feature "Feature A"</code></pre></div>
+    <div><pre><button class="cp">Copy</button><code>cd ~/work/lane2 &amp;&amp; claude
+# /review-prs   (review MR, không merge)</code></pre></div>
+  </div>
+</section>
+
+<section id="cli">
+  <h3>CLI &amp; sự cố</h3>
+  <table>
+    <tr><th>Lệnh</th><th>Việc</th></tr>
+    <tr><td><code>bin/lane-bootstrap.sh N</code></td><td>Dựng lane N</td></tr>
+    <tr><td><code>bin/lane-assign.sh "feature"</code></td><td>Chọn+boot lane trống, in lệnh chạy</td></tr>
+    <tr><td><code>bin/lane-status.sh</code></td><td>Bảng trạng thái mọi lane</td></tr>
+    <tr><td><code>bin/harness-doctor.sh __SLUG__</code></td><td>Kiểm profile (0 lỗi)</td></tr>
+  </table>
+  <div class="warn">Lane <span class="pill p-red">STALLED</span> → <code>cd ~/work/laneN &amp;&amp; claude</code> để tiếp tục. Sau ♻/🔑/sync MCP: restart Claude session của lane (skills/MCP nạp lúc khởi động).</div>
+</section>
+
+<footer>__PROJECT__ · Hackathon 2026 — sinh từ AI-SDLC Starter Kit.</footer>
+</main>
+</div>
+<script>
+  document.querySelectorAll('pre .cp').forEach(function(b){b.addEventListener('click',function(){
+    navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText).then(function(){
+      var t=b.textContent;b.textContent='Đã copy ✓';setTimeout(function(){b.textContent=t;},1200);});});});
+  var links=[].slice.call(document.querySelectorAll('#toc a')),map={};
+  links.forEach(function(a){var id=a.getAttribute('href').slice(1);if(document.getElementById(id))map[id]=a;});
+  new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){
+    links.forEach(function(l){l.classList.remove('active');});if(map[e.target.id])map[e.target.id].classList.add('active');}});},
+    {rootMargin:'-45% 0px -50% 0px'}).observe;
+  Object.keys(map).forEach(function(id){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){
+    links.forEach(function(l){l.classList.remove('active');});map[id].classList.add('active');}});},{rootMargin:'-45% 0px -50% 0px'}).observe(document.getElementById(id));});
+</script>
+</body>
+</html>
