@@ -224,7 +224,7 @@ def parse(path, multi_set=None, max_map=None):
 def main():
     meta = {
         'Phieu_khao_sat so 1 CBCC.docx': {
-            'id': '11111111-1111-4111-8111-111111111111',
+            'id': '477bd53c-4c8c-4cf8-baac-35d3ec983b7d',
             'tieuDe': 'Phiếu khảo sát số 01 — Tình hình thi hành pháp luật về an toàn thực phẩm '
                       '(dành cho cán bộ, công chức, viên chức)',
             'out': 'attp-cbcc.json',
@@ -233,7 +233,7 @@ def main():
             'max': {},
         },
         'Phieu_khao_sat_so 2_nguoi_dan.docx': {
-            'id': '22222222-2222-4222-8222-222222222222',
+            'id': '88d2c352-3fe1-4862-a1d2-fcd029ba1dcc',
             'tieuDe': 'Phiếu khảo sát số 02 — Tình hình thi hành pháp luật về an toàn thực phẩm '
                       '(dành cho người dân, hộ kinh doanh, cơ sở nhỏ lẻ)',
             'out': 'attp-nguoi-dan.json',
