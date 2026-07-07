@@ -201,7 +201,7 @@ a:hover { text-decoration: underline; }
   text-align: left;
 }
 .mh-trai { display: flex; align-items: center; gap: 12px; }
-.mh-emblem { width: 52px; height: 52px; color: var(--do-co); flex: none; }
+.mh-emblem { height: 60px; width: auto; flex: none; }
 .mh-coquan { font-weight: 800; color: var(--do-dam); font-size: 1.02rem; letter-spacing: 0.2px; }
 .mh-diachi { color: var(--chu-mo); font-size: 0.86rem; margin-top: 2px; }
 .mh-phai { text-align: right; max-width: 340px; }
