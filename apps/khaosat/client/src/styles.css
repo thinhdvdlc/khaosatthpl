@@ -178,6 +178,20 @@ a:hover { text-decoration: underline; }
 .mo-nhat { color: var(--chu-mo); }
 .cach-tren { margin-top: 16px; }
 
+/* ===== Tiêu đề mục trong phiếu (A. THÔNG TIN CHUNG / B. PHẦN KHẢO SÁT) ===== */
+.muc-phieu {
+  background: var(--do-co);
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin: 22px 0 14px;
+  box-shadow: var(--bong);
+}
+.muc-phieu:first-of-type { margin-top: 4px; }
+
 /* ===== Masthead cơ quan (Sở Tư pháp) ===== */
 .mh {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;

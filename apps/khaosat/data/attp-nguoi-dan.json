@@ -9,7 +9,7 @@
   "isNhapThongTin": false,
   "cauHois": [
     {
-      "noiDung": "THÔNG TIN CHUNG",
+      "noiDung": "A. THÔNG TIN CHUNG",
       "maLoaiCauHoi": 7,
       "isBatBuoc": false,
       "cauHoiCon": [
@@ -33,329 +33,336 @@
       ]
     },
     {
-      "noiDung": "Câu 1. Ông/bà có được tuyên truyền, phổ biến quy định pháp luật về an toàn thực phẩm tại địa phương trong thời gian qua không?",
-      "maLoaiCauHoi": 3,
+      "noiDung": "B. PHẦN KHẢO SÁT",
+      "maLoaiCauHoi": 7,
       "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Có",
-        "Không",
-        "Không nhớ/không rõ"
+      "cauHoiCon": [
+        {
+          "noiDung": "Ông/bà có được tuyên truyền, phổ biến quy định pháp luật về an toàn thực phẩm tại địa phương trong thời gian qua không?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Có",
+            "Không",
+            "Không nhớ/không rõ"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà được tiếp cận thông tin, quy định pháp luật về an toàn thực phẩm qua hình thức nào? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Thông qua hội nghị, tọa đàm, hội thảo;",
+            "Qua các trang thông tin điện tử, báo chí, mạng xã hội;",
+            "Qua hệ thống phát thanh, truyền hình;",
+            "Qua tài liệu tuyên truyền: sách pháp luật, sổ tay, tờ rơi, tờ gấp;",
+            "Qua các cuộc thi tìm hiểu pháp luật;",
+            "Qua các cuộc họp thôn, buôn, tổ dân phố;",
+            "Tổ chức truyền thông lưu động, băng rôn, khẩu hiệu, áp phích;"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá hiệu quả tuyên truyền, phổ biến pháp luật về an toàn thực phẩm tại địa phương như thế nào?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Hiệu quả",
+            "Chưa hiệu quả",
+            "Không có ý kiến"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà có biết hoặc từng sử dụng thực phẩm chức năng không?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Có biết và đã từng sử dụng",
+            "Có biết nhưng chưa sử dụng",
+            "Chưa biết rõ về loại sản phẩm này"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà thường mua hoặc tiếp cận thông tin về thực phẩm chức năng qua kênh nào? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Mạng xã hội như Facebook, TikTok, YouTube; livestream bán hàng",
+            "Sàn thương mại điện tử, website bán hàng",
+            "Nhà thuốc, cửa hàng thực phẩm chức năng",
+            "Đài phát thanh, truyền hình, báo chí",
+            "Hội thảo, tư vấn, bán hàng đa cấp, giới thiệu sản phẩm lưu động",
+            "Người quen, người thân giới thiệu",
+            "Cơ sở khám bệnh, chữa bệnh, nhân viên tư vấn sức khỏe giới thiệu"
+          ]
+        },
+        {
+          "noiDung": "Ông/Bà có từng mua thực phẩm chức năng dựa theo quảng cáo của người nổi tiếng (nghệ sĩ, người có lượt theo dõi cao trên mạng xã hội) và sau đó phát hiện chất lượng không đúng như quảng cáo không?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Có",
+            "Chưa",
+            "Không để ý"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đã từng mua phải hoặc biết trường hợp thực phẩm chức năng giả, quảng cáo sai sự thật chưa? (Có/Chưa).",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Chưa",
+            "Có"
+          ]
+        },
+        {
+          "noiDung": "Khi phát hiện một sản phẩm thực phẩm chức năng quảng cáo sai sự thật hoặc thổi phồng công dụng như thuốc chữa bệnh trên mạng xã hội, Ông/Bà (với tư cách là người tiêu dùng) thường làm gì?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Bỏ qua vì không liên quan đến mình",
+            "Viết bình luận (comment) cảnh báo cho người khác biết",
+            "Báo cáo vi phạm (report) trực tiếp trên nền tảng mạng xã hội đó",
+            "Phản ánh, khiếu nại đến cơ quan chức năng hoặc hội bảo vệ người tiêu dùng"
+          ]
+        },
+        {
+          "noiDung": "Khi mua thực phẩm chức năng, Ông/Bà thường quan tâm đến thông tin nào nhất?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Giá cả;",
+            "Thương hiệu/Nhà sản xuất uy tín;",
+            "Nhãn mác/xuất xứ;",
+            "Quảng cáo trên mạng;",
+            "Giấy công bố sản phẩm;"
+          ]
+        },
+        {
+          "noiDung": "Khi mua hoặc sử dụng thực phẩm chức năng, Ông/Bà thường xác thực thông tin sản phẩm bằng cách nào?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Quét mã QR, mã vạch trên nhãn mác sản phẩm",
+            "Tra cứu số đăng ký bản công bố sản phẩm trên trang web của cơ quan y tế",
+            "Chỉ tin theo lời giới thiệu của người bán hoặc quảng cáo trên mạng xã hội",
+            "Không kiểm tra, chỉ mua theo thói quen/nhu cầu"
+          ]
+        },
+        {
+          "noiDung": "Ông/Bà có gặp khó khăn gì trong việc thực hiện thủ tục tự công bố sản phẩm hoặc ghi nhãn phụ cho sản phẩm không? (Chỉ dành cho Hộ gia đình, cơ sở sản xuất, kinh doanh).",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Có, thủ tục phức tạp;",
+            "Không gặp khó khăn;"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà có thường xuyên thấy cơ quan chức năng lấy mẫu, dùng xe kiểm nghiệm lưu động hoặc test nhanh thực phẩm tại chợ, siêu thị, cơ sở kinh doanh trên địa bàn không?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Thường xuyên",
+            "Thỉnh thoảng",
+            "Rất ít hoặc chưa từng thấy",
+            "Không để ý/không rõ"
+          ]
+        },
+        {
+          "noiDung": "Theo ông/bà, thông tin cảnh báo, thu hồi sản phẩm thực phẩm không bảo đảm an toàn có được công khai kịp thời, dễ tiếp cận không?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Kịp thời, dễ tiếp cận",
+            "Có công khai nhưng khó tiếp cận hoặc chưa dễ hiểu",
+            "Chưa kịp thời, chưa dễ tiếp cận",
+            "Không có thông tin/không rõ"
+          ]
+        },
+        {
+          "noiDung": "Đối với cơ sở sản xuất, kinh doanh thực phẩm: khi thực hiện kiểm nghiệm sản phẩm để làm thủ tục tự công bố hoặc phục vụ kinh doanh, ông/bà có gặp khó khăn gì không? (Chỉ dành cho Hộ gia đình, cơ sở sản xuất, kinh doanh).",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Chi phí kiểm nghiệm cao",
+            "Thời gian trả kết quả lâu",
+            "Chưa rõ cần kiểm nghiệm chỉ tiêu nào, hồ sơ gì",
+            "Không gặp khó khăn",
+            "Không áp dụng vì không phải cơ sở sản xuất, kinh doanh",
+            "Không có ý kiến"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà có quan tâm đến việc thực phẩm được kiểm nghiệm trước khi lưu thông trên thị trường không?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Có quan tâm",
+            "Ít quan tâm",
+            "Không quan tâm"
+          ]
+        },
+        {
+          "noiDung": "Ông/Bà có sẵn sàng trả mức giá cao hơn một chút để mua các sản phẩm thực phẩm đã được kiểm nghiệm và chứng nhận an toàn rõ ràng hay không?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Hoàn toàn sẵn sàng",
+            "Chỉ sẵn sàng nếu mức chênh lệch giá không quá lớn",
+            "Không sẵn sàng, vẫn ưu tiên các sản phẩm giá rẻ, thuận tiện",
+            "Không quan tâm"
+          ]
+        },
+        {
+          "noiDung": "Khi xảy ra sự cố ngộ độc thực phẩm hoặc nghi ngờ thực phẩm giả trên địa bàn, Ông/Bà có biết cơ sở nào có chức năng kiểm nghiệm để gửi mẫu hoặc phản ánh không?\"",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Có biết",
+            "Không biết"
+          ]
+        },
+        {
+          "noiDung": "Nếu ông/bà là hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, cơ sở thức ăn đường phố: cơ sở đã được chính quyền địa phương hướng dẫn và tổ chức ký “Bản cam kết bảo đảm an toàn thực phẩm” chưa? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Đã ký và thực hiện đúng",
+            "Đã ký nhưng chưa triển khai thực hiện trên thực tế",
+            "Chưa được hướng dẫn ký",
+            "Không thuộc đối tượng phải ký/không áp dụng",
+            "Không rõ"
+          ]
+        },
+        {
+          "noiDung": "Đối với các hộ kinh doanh nhỏ lẻ, việc thực hiện ký Bản cam kết bảo đảm an toàn thực phẩm với Ủy ban nhân dân cấp xã gặp khó khăn gì? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Thủ tục, biểu mẫu còn phức tạp, khó hiểu",
+            "Chưa được hướng dẫn rõ ràng về các điều kiện phải chuẩn bị trước khi ký",
+            "Không gặp khó khăn gì, việc ký kết thuận lợi"
+          ]
+        },
+        {
+          "noiDung": "Ông/Bà đánh giá như thế nào về sự hướng dẫn của chính quyền địa phương trong việc giúp cơ sở bảo đảm các điều kiện vệ sinh, trang thiết bị, nguồn nước? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Hướng dẫn rõ ràng, dễ thực hiện",
+            "Hướng dẫn còn chung chung, khó áp dụng",
+            "Chưa từng được hướng dẫn"
+          ]
+        },
+        {
+          "noiDung": "Sau khi ký cam kết, cơ quan chức năng có kiểm tra, hậu kiểm việc thực hiện của cơ sở không? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Có kiểm tra định kỳ hoặc theo kế hoạch",
+            "Chỉ kiểm tra khi có phản ánh, sự cố, ngộ độc thực phẩm hoặc đợt cao điểm",
+            "Chưa bao giờ kiểm tra",
+            "Không áp dụng/không rõ"
+          ]
+        },
+        {
+          "noiDung": "Khi cơ quan chức năng đến kiểm tra, hậu kiểm việc thực hiện Bản cam kết tại cơ sở, nội dung nào thường được tập trung kiểm tra nhất? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Giấy tờ chứng minh nguồn gốc, xuất xứ nguyên liệu, hóa đơn mua hàng",
+            "Tình trạng vệ sinh cơ sở, bếp nấu, trang thiết bị, dụng cụ",
+            "Khám sức khỏe định kỳ và kiến thức ATTP của người trực tiếp làm việc",
+            "Điều kiện nguồn nước và xử lý rác thải tại cơ sở",
+            "Kiểm tra mang tính hình thức, chưa đi sâu vào các điều kiện thực tế"
+          ]
+        },
+        {
+          "noiDung": "Khó khăn lớn nhất khiến cơ sở/hộ gia đình của Ông/Bà chưa đạt hoặc khó duy trì các điều kiện vệ sinh, trang thiết bị, nguồn nước theo cam kết là gì? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Diện tích mặt bằng quá chật hẹp, kiến trúc cơ sở khó thay đổi",
+            "Thiếu vốn để đầu tư, mua sắm trang thiết bị hiện đại, tủ bảo quản",
+            "Nguồn nước sạch tại địa phương chưa bảo đảm hoặc chi phí nước sạch cao",
+            "Ý thức và thói quen của nhân viên/người trực tiếp chế biến khó thay đổi",
+            "Cơ sở không gặp khó khăn nào"
+          ]
+        },
+        {
+          "noiDung": "Nếu phát hiện một cơ sở kinh doanh thức ăn đường phố hoặc quán ăn trên địa bàn sử dụng nguyên liệu bẩn, ôi thiu, Ông/Bà sẽ phản ánh đến đâu?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Báo ngay cho Trưởng thôn/Buôn/Tổ trưởng dân phố hoặc UBND cấp xã",
+            "Gọi điện đến đường dây nóng về ATTP của tỉnh (nếu có)",
+            "Đăng tải hình ảnh, bài viết lên trang mạng xã hội cá nhân (Facebook, Hội nhóm địa phương)",
+            "Nói trực tiếp với chủ cơ sở hoặc đơn giản là lần sau không quay lại mua nữa"
+          ]
+        },
+        {
+          "noiDung": "Theo ông/bà, nguyên nhân chủ yếu dẫn đến vi phạm pháp luật về an toàn thực phẩm là gì? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Hệ thống pháp luật còn có hạn chế, bất cập",
+            "Ý thức chấp hành pháp luật của một số cơ sở sản xuất, kinh doanh còn hạn chế",
+            "Nhận thức và thói quen tiêu dùng của một bộ phận người dân còn hạn chế; chưa quan tâm đầy đủ đến nguồn gốc, nhãn hàng hóa, hạn sử dụng, chất lượng sản phẩm và nội dung quảng cáo khi lựa chọn, sử dụng thực phẩm",
+            "Công tác tuyên truyền, phổ biến pháp luật chưa thường xuyên, chưa dễ hiểu",
+            "Công tác kiểm tra, xử lý vi phạm chưa thường xuyên hoặc chưa đủ sức răn đe",
+            "Việc kinh doanh thực phẩm chức năng qua mạng xã hội, thương mại điện tử, hàng “xách tay” khó kiểm soát nguồn gốc, chất lượng và chủ thể vi phạm",
+            "Công tác lấy mẫu, kiểm nghiệm, công khai kết quả kiểm nghiệm, cảnh báo và thu hồi sản phẩm không bảo đảm an toàn thực phẩm còn hạn chế",
+            "Một số cơ sở nhỏ lẻ, thức ăn đường phố, kinh doanh thời vụ chưa chấp hành nghiêm điều kiện bảo đảm an toàn thực phẩm",
+            "Khoảng cách di chuyển đến cơ quan quản lý (UBND cấp xã) xa hơn sau sáp nhập địa giới hành chính, gây khó khăn khi cần nộp hồ sơ cam kết hoặc đề xuất hỗ trợ"
+          ]
+        },
+        {
+          "noiDung": "Theo Ông/Bà, để người dân yên tâm về an toàn thực phẩm tại địa phương, cơ quan chức năng cần ưu tiên tập trung vào giải pháp nào sau đây? (chọn tối đa 3 phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Siết chặt và xử phạt nghiêm các quảng cáo sai sự thật trên mạng xã hội (Facebook, TikTok, Livestream)",
+            "Tăng cường test nhanh lưu động tại các chợ truyền thống, đầu mối",
+            "Hỗ trợ kinh phí, giảm chi phí kiểm nghiệm sản phẩm cho các hộ kinh doanh nhỏ lẻ",
+            "Tuyên truyền bằng hình thức dễ hiểu (tờ rơi, phát thanh thôn/buôn) thay vì tổ chức hội nghị",
+            "Thiết lập và công khai rộng rãi \"Đường dây nóng\" tiếp nhận phản ánh về ATTP tại từng xã/phường/thị trấn",
+            "Tổ chức các lớp tập huấn miễn phí về kỹ năng tự công bố sản phẩm và ghi nhãn cho hộ kinh doanh nhỏ lẻ",
+            "Tăng cường phối hợp liên ngành (Y tế, Nông nghiệp, Công Thương, Công an) trong hậu kiểm và xử lý nghiêm vi phạm trên môi trường mạng"
+          ],
+          "soLuongTraLoiMax": 3
+        },
+        {
+          "noiDung": "Để công tác quản lý an toàn thực phẩm tại địa phương vừa nghiêm minh, vừa tạo điều kiện thuận lợi cho các hộ kinh doanh nhỏ lẻ phát triển kinh tế, Ông/Bà có đề xuất hoặc nguyện vọng cụ thể nào gửi tới Sở Tư pháp và chính quyền tỉnh Đắk Lắk hay không?",
+          "maLoaiCauHoi": 4,
+          "isBatBuoc": false
+        }
       ]
-    },
-    {
-      "noiDung": "Câu 2. Ông/bà được tiếp cận thông tin, quy định pháp luật về an toàn thực phẩm qua hình thức nào? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Thông qua hội nghị, tọa đàm, hội thảo;",
-        "Qua các trang thông tin điện tử, báo chí, mạng xã hội;",
-        "Qua hệ thống phát thanh, truyền hình;",
-        "Qua tài liệu tuyên truyền: sách pháp luật, sổ tay, tờ rơi, tờ gấp;",
-        "Qua các cuộc thi tìm hiểu pháp luật;",
-        "Qua các cuộc họp thôn, buôn, tổ dân phố;",
-        "Tổ chức truyền thông lưu động, băng rôn, khẩu hiệu, áp phích;"
-      ]
-    },
-    {
-      "noiDung": "Câu 3. Ông/bà đánh giá hiệu quả tuyên truyền, phổ biến pháp luật về an toàn thực phẩm tại địa phương như thế nào?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Hiệu quả",
-        "Chưa hiệu quả",
-        "Không có ý kiến"
-      ]
-    },
-    {
-      "noiDung": "Câu 4. Ông/bà có biết hoặc từng sử dụng thực phẩm chức năng không?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Có biết và đã từng sử dụng",
-        "Có biết nhưng chưa sử dụng",
-        "Chưa biết rõ về loại sản phẩm này"
-      ]
-    },
-    {
-      "noiDung": "Câu 5. Ông/bà thường mua hoặc tiếp cận thông tin về thực phẩm chức năng qua kênh nào? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Mạng xã hội như Facebook, TikTok, YouTube; livestream bán hàng",
-        "Sàn thương mại điện tử, website bán hàng",
-        "Nhà thuốc, cửa hàng thực phẩm chức năng",
-        "Đài phát thanh, truyền hình, báo chí",
-        "Hội thảo, tư vấn, bán hàng đa cấp, giới thiệu sản phẩm lưu động",
-        "Người quen, người thân giới thiệu",
-        "Cơ sở khám bệnh, chữa bệnh, nhân viên tư vấn sức khỏe giới thiệu"
-      ]
-    },
-    {
-      "noiDung": "Câu 6. Ông/Bà có từng mua thực phẩm chức năng dựa theo quảng cáo của người nổi tiếng (nghệ sĩ, người có lượt theo dõi cao trên mạng xã hội) và sau đó phát hiện chất lượng không đúng như quảng cáo không?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Có",
-        "Chưa",
-        "Không để ý"
-      ]
-    },
-    {
-      "noiDung": "Câu 7. Ông/bà đã từng mua phải hoặc biết trường hợp thực phẩm chức năng giả, quảng cáo sai sự thật chưa? (Có/Chưa).",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Chưa",
-        "Có"
-      ]
-    },
-    {
-      "noiDung": "Câu 8. Khi phát hiện một sản phẩm thực phẩm chức năng quảng cáo sai sự thật hoặc thổi phồng công dụng như thuốc chữa bệnh trên mạng xã hội, Ông/Bà (với tư cách là người tiêu dùng) thường làm gì?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Bỏ qua vì không liên quan đến mình",
-        "Viết bình luận (comment) cảnh báo cho người khác biết",
-        "Báo cáo vi phạm (report) trực tiếp trên nền tảng mạng xã hội đó",
-        "Phản ánh, khiếu nại đến cơ quan chức năng hoặc hội bảo vệ người tiêu dùng"
-      ]
-    },
-    {
-      "noiDung": "Câu 9. Khi mua thực phẩm chức năng, Ông/Bà thường quan tâm đến thông tin nào nhất?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Giá cả;",
-        "Thương hiệu/Nhà sản xuất uy tín;",
-        "Nhãn mác/xuất xứ;",
-        "Quảng cáo trên mạng;",
-        "Giấy công bố sản phẩm;"
-      ]
-    },
-    {
-      "noiDung": "Câu 10. Khi mua hoặc sử dụng thực phẩm chức năng, Ông/Bà thường xác thực thông tin sản phẩm bằng cách nào?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Quét mã QR, mã vạch trên nhãn mác sản phẩm",
-        "Tra cứu số đăng ký bản công bố sản phẩm trên trang web của cơ quan y tế",
-        "Chỉ tin theo lời giới thiệu của người bán hoặc quảng cáo trên mạng xã hội",
-        "Không kiểm tra, chỉ mua theo thói quen/nhu cầu"
-      ]
-    },
-    {
-      "noiDung": "Câu 11. Ông/Bà có gặp khó khăn gì trong việc thực hiện thủ tục tự công bố sản phẩm hoặc ghi nhãn phụ cho sản phẩm không? (Chỉ dành cho Hộ gia đình, cơ sở sản xuất, kinh doanh).",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Có, thủ tục phức tạp;",
-        "Không gặp khó khăn;"
-      ]
-    },
-    {
-      "noiDung": "Câu 12. Ông/bà có thường xuyên thấy cơ quan chức năng lấy mẫu, dùng xe kiểm nghiệm lưu động hoặc test nhanh thực phẩm tại chợ, siêu thị, cơ sở kinh doanh trên địa bàn không?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Thường xuyên",
-        "Thỉnh thoảng",
-        "Rất ít hoặc chưa từng thấy",
-        "Không để ý/không rõ"
-      ]
-    },
-    {
-      "noiDung": "Câu 13. Theo ông/bà, thông tin cảnh báo, thu hồi sản phẩm thực phẩm không bảo đảm an toàn có được công khai kịp thời, dễ tiếp cận không?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Kịp thời, dễ tiếp cận",
-        "Có công khai nhưng khó tiếp cận hoặc chưa dễ hiểu",
-        "Chưa kịp thời, chưa dễ tiếp cận",
-        "Không có thông tin/không rõ"
-      ]
-    },
-    {
-      "noiDung": "Câu 14. Đối với cơ sở sản xuất, kinh doanh thực phẩm: khi thực hiện kiểm nghiệm sản phẩm để làm thủ tục tự công bố hoặc phục vụ kinh doanh, ông/bà có gặp khó khăn gì không? (Chỉ dành cho Hộ gia đình, cơ sở sản xuất, kinh doanh).",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Chi phí kiểm nghiệm cao",
-        "Thời gian trả kết quả lâu",
-        "Chưa rõ cần kiểm nghiệm chỉ tiêu nào, hồ sơ gì",
-        "Không gặp khó khăn",
-        "Không áp dụng vì không phải cơ sở sản xuất, kinh doanh",
-        "Không có ý kiến"
-      ]
-    },
-    {
-      "noiDung": "Câu 15. Ông/bà có quan tâm đến việc thực phẩm được kiểm nghiệm trước khi lưu thông trên thị trường không?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Có quan tâm",
-        "Ít quan tâm",
-        "Không quan tâm"
-      ]
-    },
-    {
-      "noiDung": "Câu 16. Ông/Bà có sẵn sàng trả mức giá cao hơn một chút để mua các sản phẩm thực phẩm đã được kiểm nghiệm và chứng nhận an toàn rõ ràng hay không?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Hoàn toàn sẵn sàng",
-        "Chỉ sẵn sàng nếu mức chênh lệch giá không quá lớn",
-        "Không sẵn sàng, vẫn ưu tiên các sản phẩm giá rẻ, thuận tiện",
-        "Không quan tâm"
-      ]
-    },
-    {
-      "noiDung": "Câu 17. Khi xảy ra sự cố ngộ độc thực phẩm hoặc nghi ngờ thực phẩm giả trên địa bàn, Ông/Bà có biết cơ sở nào có chức năng kiểm nghiệm để gửi mẫu hoặc phản ánh không?\"",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Có biết",
-        "Không biết"
-      ]
-    },
-    {
-      "noiDung": "Câu 18. Nếu ông/bà là hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, cơ sở thức ăn đường phố: cơ sở đã được chính quyền địa phương hướng dẫn và tổ chức ký “Bản cam kết bảo đảm an toàn thực phẩm” chưa? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Đã ký và thực hiện đúng",
-        "Đã ký nhưng chưa triển khai thực hiện trên thực tế",
-        "Chưa được hướng dẫn ký",
-        "Không thuộc đối tượng phải ký/không áp dụng",
-        "Không rõ"
-      ]
-    },
-    {
-      "noiDung": "Câu 19. Đối với các hộ kinh doanh nhỏ lẻ, việc thực hiện ký Bản cam kết bảo đảm an toàn thực phẩm với Ủy ban nhân dân cấp xã gặp khó khăn gì? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Thủ tục, biểu mẫu còn phức tạp, khó hiểu",
-        "Chưa được hướng dẫn rõ ràng về các điều kiện phải chuẩn bị trước khi ký",
-        "Không gặp khó khăn gì, việc ký kết thuận lợi"
-      ]
-    },
-    {
-      "noiDung": "Câu 20. Ông/Bà đánh giá như thế nào về sự hướng dẫn của chính quyền địa phương trong việc giúp cơ sở bảo đảm các điều kiện vệ sinh, trang thiết bị, nguồn nước? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Hướng dẫn rõ ràng, dễ thực hiện",
-        "Hướng dẫn còn chung chung, khó áp dụng",
-        "Chưa từng được hướng dẫn"
-      ]
-    },
-    {
-      "noiDung": "Câu 21. Sau khi ký cam kết, cơ quan chức năng có kiểm tra, hậu kiểm việc thực hiện của cơ sở không? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Có kiểm tra định kỳ hoặc theo kế hoạch",
-        "Chỉ kiểm tra khi có phản ánh, sự cố, ngộ độc thực phẩm hoặc đợt cao điểm",
-        "Chưa bao giờ kiểm tra",
-        "Không áp dụng/không rõ"
-      ]
-    },
-    {
-      "noiDung": "Câu 22. Khi cơ quan chức năng đến kiểm tra, hậu kiểm việc thực hiện Bản cam kết tại cơ sở, nội dung nào thường được tập trung kiểm tra nhất? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Giấy tờ chứng minh nguồn gốc, xuất xứ nguyên liệu, hóa đơn mua hàng",
-        "Tình trạng vệ sinh cơ sở, bếp nấu, trang thiết bị, dụng cụ",
-        "Khám sức khỏe định kỳ và kiến thức ATTP của người trực tiếp làm việc",
-        "Điều kiện nguồn nước và xử lý rác thải tại cơ sở",
-        "Kiểm tra mang tính hình thức, chưa đi sâu vào các điều kiện thực tế"
-      ]
-    },
-    {
-      "noiDung": "Câu 23. Khó khăn lớn nhất khiến cơ sở/hộ gia đình của Ông/Bà chưa đạt hoặc khó duy trì các điều kiện vệ sinh, trang thiết bị, nguồn nước theo cam kết là gì? (Chỉ dành cho các hộ gia đình, cơ sở sản xuất, kinh doanh nhỏ lẻ, thức ăn đường phố).",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Diện tích mặt bằng quá chật hẹp, kiến trúc cơ sở khó thay đổi",
-        "Thiếu vốn để đầu tư, mua sắm trang thiết bị hiện đại, tủ bảo quản",
-        "Nguồn nước sạch tại địa phương chưa bảo đảm hoặc chi phí nước sạch cao",
-        "Ý thức và thói quen của nhân viên/người trực tiếp chế biến khó thay đổi",
-        "Cơ sở không gặp khó khăn nào"
-      ]
-    },
-    {
-      "noiDung": "Câu 24. Nếu phát hiện một cơ sở kinh doanh thức ăn đường phố hoặc quán ăn trên địa bàn sử dụng nguyên liệu bẩn, ôi thiu, Ông/Bà sẽ phản ánh đến đâu?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Báo ngay cho Trưởng thôn/Buôn/Tổ trưởng dân phố hoặc UBND cấp xã",
-        "Gọi điện đến đường dây nóng về ATTP của tỉnh (nếu có)",
-        "Đăng tải hình ảnh, bài viết lên trang mạng xã hội cá nhân (Facebook, Hội nhóm địa phương)",
-        "Nói trực tiếp với chủ cơ sở hoặc đơn giản là lần sau không quay lại mua nữa"
-      ]
-    },
-    {
-      "noiDung": "Câu 25. Theo ông/bà, nguyên nhân chủ yếu dẫn đến vi phạm pháp luật về an toàn thực phẩm là gì? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Hệ thống pháp luật còn có hạn chế, bất cập",
-        "Ý thức chấp hành pháp luật của một số cơ sở sản xuất, kinh doanh còn hạn chế",
-        "Nhận thức và thói quen tiêu dùng của một bộ phận người dân còn hạn chế; chưa quan tâm đầy đủ đến nguồn gốc, nhãn hàng hóa, hạn sử dụng, chất lượng sản phẩm và nội dung quảng cáo khi lựa chọn, sử dụng thực phẩm",
-        "Công tác tuyên truyền, phổ biến pháp luật chưa thường xuyên, chưa dễ hiểu",
-        "Công tác kiểm tra, xử lý vi phạm chưa thường xuyên hoặc chưa đủ sức răn đe",
-        "Việc kinh doanh thực phẩm chức năng qua mạng xã hội, thương mại điện tử, hàng “xách tay” khó kiểm soát nguồn gốc, chất lượng và chủ thể vi phạm",
-        "Công tác lấy mẫu, kiểm nghiệm, công khai kết quả kiểm nghiệm, cảnh báo và thu hồi sản phẩm không bảo đảm an toàn thực phẩm còn hạn chế",
-        "Một số cơ sở nhỏ lẻ, thức ăn đường phố, kinh doanh thời vụ chưa chấp hành nghiêm điều kiện bảo đảm an toàn thực phẩm",
-        "Khoảng cách di chuyển đến cơ quan quản lý (UBND cấp xã) xa hơn sau sáp nhập địa giới hành chính, gây khó khăn khi cần nộp hồ sơ cam kết hoặc đề xuất hỗ trợ"
-      ]
-    },
-    {
-      "noiDung": "Câu 26. Theo Ông/Bà, để người dân yên tâm về an toàn thực phẩm tại địa phương, cơ quan chức năng cần ưu tiên tập trung vào giải pháp nào sau đây? (chọn tối đa 3 phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Siết chặt và xử phạt nghiêm các quảng cáo sai sự thật trên mạng xã hội (Facebook, TikTok, Livestream)",
-        "Tăng cường test nhanh lưu động tại các chợ truyền thống, đầu mối",
-        "Hỗ trợ kinh phí, giảm chi phí kiểm nghiệm sản phẩm cho các hộ kinh doanh nhỏ lẻ",
-        "Tuyên truyền bằng hình thức dễ hiểu (tờ rơi, phát thanh thôn/buôn) thay vì tổ chức hội nghị",
-        "Thiết lập và công khai rộng rãi \"Đường dây nóng\" tiếp nhận phản ánh về ATTP tại từng xã/phường/thị trấn",
-        "Tổ chức các lớp tập huấn miễn phí về kỹ năng tự công bố sản phẩm và ghi nhãn cho hộ kinh doanh nhỏ lẻ",
-        "Tăng cường phối hợp liên ngành (Y tế, Nông nghiệp, Công Thương, Công an) trong hậu kiểm và xử lý nghiêm vi phạm trên môi trường mạng"
-      ],
-      "soLuongTraLoiMax": 3
-    },
-    {
-      "noiDung": "Câu 27. Để công tác quản lý an toàn thực phẩm tại địa phương vừa nghiêm minh, vừa tạo điều kiện thuận lợi cho các hộ kinh doanh nhỏ lẻ phát triển kinh tế, Ông/Bà có đề xuất hoặc nguyện vọng cụ thể nào gửi tới Sở Tư pháp và chính quyền tỉnh Đắk Lắk hay không?",
-      "maLoaiCauHoi": 4,
-      "isBatBuoc": false
     }
   ]
 }

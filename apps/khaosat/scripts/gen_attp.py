@@ -176,13 +176,14 @@ def parse(path, multi_set=None, max_map=None):
         flush_info()
 
         cauHois.append({
-            'noiDung': clean(texts[idx_a][2]).lstrip('A.').strip() or 'THÔNG TIN CHUNG',
+            'noiDung': 'A. THÔNG TIN CHUNG',
             'maLoaiCauHoi': NHOM,
             'isBatBuoc': False,
             'cauHoiCon': nhom_con,
         })
 
-    # ---- Section B: các "Câu N." ----
+    # ---- Section B: các "Câu N." (gom vào một mục "B. PHẦN KHẢO SÁT") ----
+    cauB = []
     start = idx_b + 1 if idx_b is not None else 0
     i = start
     n = len(texts)
@@ -194,8 +195,10 @@ def parse(path, multi_set=None, max_map=None):
             return
         m = re.match(r'^Câu\s+(\d+)\.', cur_q)
         qnum = int(m.group(1)) if m else None
-        cauHois.append(dung_cauhoi(
-            cur_q, cur_opts, cur_table,
+        # Bỏ tiền tố "Câu N." trong nội dung (giao diện tự đánh số lại)
+        qtext = re.sub(r'^Câu\s+\d+\.\s*', '', cur_q)
+        cauB.append(dung_cauhoi(
+            qtext, cur_opts, cur_table,
             ep_multi=(qnum in multi_set),
             ep_max=max_map.get(qnum),
         ))
@@ -216,6 +219,14 @@ def parse(path, multi_set=None, max_map=None):
             # bỏ qua các dòng chấm, footer
         i += 1
     flush_q()
+
+    if cauB:
+        cauHois.append({
+            'noiDung': 'B. PHẦN KHẢO SÁT',
+            'maLoaiCauHoi': NHOM,
+            'isBatBuoc': False,
+            'cauHoiCon': cauB,
+        })
 
     footer = 'Xin trân trọng cảm ơn sự hợp tác của Ông/Bà!'
     return header, footer, cauHois

@@ -76,6 +76,25 @@ export default function KhaoSat() {
     return map
   }, [khaoSat])
 
+  // Danh sách hiển thị: nhóm cấp cao → "mục" (A. THÔNG TIN CHUNG / B. PHẦN KHẢO SÁT);
+  // câu con của mục khảo sát đánh "Câu 1..N", mục thông tin đánh "1., 2.".
+  const dsHienThi = useMemo(() => {
+    const ds = []
+    for (const item of khaoSat?.cauHois || []) {
+      if (item.maLoaiCauHoi === LOAI.NHOM) {
+        const laKhaoSat = /KHẢO SÁT/i.test(item.noiDung || '')
+        ds.push({ kind: 'muc', id: item.id, title: item.noiDung })
+        ;(item.cauHoiCon || []).forEach((con, i) =>
+          ds.push({ kind: 'cau', cauHoi: con, so: String(i + 1), tienTo: laKhaoSat ? 'Câu ' : '' })
+        )
+      } else {
+        const soCau = ds.filter((m) => m.kind === 'cau' && m.tienTo === 'Câu ').length + 1
+        ds.push({ kind: 'cau', cauHoi: item, so: String(soCau), tienTo: 'Câu ' })
+      }
+    }
+    return ds
+  }, [khaoSat])
+
   function capNhat(idCau, giaTri) {
     setTraLoi((t) => ({ ...t, [idCau]: giaTri }))
     // xoá lỗi của câu (và câu cha ma trận nếu có) khi người dùng sửa
@@ -179,9 +198,9 @@ export default function KhaoSat() {
         ?.scrollIntoView({ behavior: 'smooth' })
       return
     }
-    for (const goc of khaoSat.cauHois || []) {
-      if (gomId(goc).some((x) => loiMoi[x])) {
-        document.getElementById('cau-' + goc.id)?.scrollIntoView({ behavior: 'smooth' })
+    for (const card of dsHienThi.filter((m) => m.kind === 'cau')) {
+      if (gomId(card.cauHoi).some((x) => loiMoi[x])) {
+        document.getElementById('cau-' + card.cauHoi.id)?.scrollIntoView({ behavior: 'smooth' })
         return
       }
     }
@@ -512,18 +531,26 @@ export default function KhaoSat() {
               </div>
             )}
 
-            {/* Danh sách câu hỏi gốc */}
-            {(khaoSat.cauHois || []).map((cauHoi, i) => {
-              const coLoi = gomId(cauHoi).some((x) => loi[x])
+            {/* Các mục (A. THÔNG TIN CHUNG / B. PHẦN KHẢO SÁT) + câu hỏi */}
+            {dsHienThi.map((m) => {
+              if (m.kind === 'muc') {
+                return (
+                  <div key={'muc-' + m.id} className="muc-phieu">
+                    {m.title}
+                  </div>
+                )
+              }
+              const coLoi = gomId(m.cauHoi).some((x) => loi[x])
               return (
                 <div
-                  key={cauHoi.id}
-                  id={'cau-' + cauHoi.id}
+                  key={m.cauHoi.id}
+                  id={'cau-' + m.cauHoi.id}
                   className={'the cau-hoi' + (coLoi ? ' loi-cau' : '')}
                 >
                   <CauHoiItem
-                    cauHoi={cauHoi}
-                    so={String(i + 1)}
+                    cauHoi={m.cauHoi}
+                    so={m.so}
+                    tienTo={m.tienTo}
                     traLoi={traLoi}
                     capNhat={capNhat}
                     loi={loi}

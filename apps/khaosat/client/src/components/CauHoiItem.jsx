@@ -21,7 +21,8 @@ function ghiChuLoai(cauHoi) {
 // Render MỘT câu hỏi theo maLoaiCauHoi; đệ quy cho nhóm (loại 7)
 // - traLoi: map cauHoiId → giá trị; capNhat(id, giaTri); loi: map cauHoiId → thông báo lỗi
 // - so: số hiển thị ("1" hoặc "1.1" với câu con); laCauCon: render kiểu câu con trong nhóm
-export default function CauHoiItem({ cauHoi, so, laCauCon = false, traLoi, capNhat, loi }) {
+// - tienTo: tiền tố trước số ("Câu " cho phần khảo sát, "" cho phần thông tin chung)
+export default function CauHoiItem({ cauHoi, so, laCauCon = false, tienTo = 'Câu ', traLoi, capNhat, loi }) {
   const ma = cauHoi.maLoaiCauHoi
   const giaTri = traLoi[cauHoi.id]
   const thongBaoLoi = loi[cauHoi.id]
@@ -151,7 +152,7 @@ export default function CauHoiItem({ cauHoi, so, laCauCon = false, traLoi, capNh
   const noiDung = (
     <>
       <div className={laCauCon ? 'de-cau-con' : 'de-cau'}>
-        <span className="so-cau">{laCauCon ? `${so}.` : `Câu ${so}.`}</span>
+        <span className="so-cau">{laCauCon ? `${so}.` : `${tienTo}${so}.`}</span>
         {cauHoi.noiDung}
         {cauHoi.isBatBuoc && <span className="bat-buoc">*</span>}
         {ghiChu && <div className="ghi-chu">{ghiChu}</div>}

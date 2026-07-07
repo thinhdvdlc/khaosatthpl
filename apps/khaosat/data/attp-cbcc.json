@@ -9,7 +9,7 @@
   "isNhapThongTin": false,
   "cauHois": [
     {
-      "noiDung": "THÔNG TIN CHUNG",
+      "noiDung": "A. THÔNG TIN CHUNG",
       "maLoaiCauHoi": 7,
       "isBatBuoc": false,
       "cauHoiCon": [
@@ -53,647 +53,654 @@
       ]
     },
     {
-      "noiDung": "Câu 1. Ông/bà đánh giá về tình hình ban hành hoặc tham mưu ban hành văn bản quy phạm pháp luật về an toàn thực phẩm trên địa bàn tỉnh thời gian qua?",
-      "maLoaiCauHoi": 6,
+      "noiDung": "B. PHẦN KHẢO SÁT",
+      "maLoaiCauHoi": 7,
       "isBatBuoc": false,
-      "cauTraLoi": [
-        "Đạt yêu cầu",
-        "Chưa đạt yêu cầu (cần sửa đổi, bổ sung)",
-        "Không phát sinh việc ban hành/tham mưu",
-        "Không rõ/không thuộc chức năng"
-      ],
       "cauHoiCon": [
         {
-          "noiDung": "Tính kịp thời, đầy đủ",
-          "maLoaiCauHoi": 3,
+          "noiDung": "Ông/bà đánh giá về tình hình ban hành hoặc tham mưu ban hành văn bản quy phạm pháp luật về an toàn thực phẩm trên địa bàn tỉnh thời gian qua?",
+          "maLoaiCauHoi": 6,
           "isBatBuoc": false,
-          "cauTraLoi": []
+          "cauTraLoi": [
+            "Đạt yêu cầu",
+            "Chưa đạt yêu cầu (cần sửa đổi, bổ sung)",
+            "Không phát sinh việc ban hành/tham mưu",
+            "Không rõ/không thuộc chức năng"
+          ],
+          "cauHoiCon": [
+            {
+              "noiDung": "Tính kịp thời, đầy đủ",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Tính thống nhất, đồng bộ",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Tính khả thi",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            }
+          ]
         },
         {
-          "noiDung": "Tính thống nhất, đồng bộ",
+          "noiDung": "Ông/bà đánh giá về tình hình ban hành văn bản chỉ đạo, hướng dẫn áp dụng văn bản quy phạm pháp luật về an toàn thực phẩm trên địa bàn tỉnh thời gian qua?",
           "maLoaiCauHoi": 3,
           "isBatBuoc": false,
-          "cauTraLoi": []
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Kịp thời, đầy đủ",
+            "Chưa kịp thời, đầy đủ"
+          ]
         },
         {
-          "noiDung": "Tính khả thi",
+          "noiDung": "Đơn vị/địa phương đã tuyên truyền, phổ biến pháp luật về an toàn thực phẩm bằng hình thức nào? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Thông qua hội nghị, tọa đàm, hội thảo",
+            "Qua các trang thông tin điện tử, báo chí, mạng xã hội",
+            "Qua hệ thống phát thanh, truyền hình",
+            "Qua tài liệu tuyên truyền: sách pháp luật, sổ tay, tờ rơi, tờ gấp",
+            "Qua các cuộc thi tìm hiểu pháp luật",
+            "Qua các cuộc họp thôn, buôn, tổ dân phố",
+            "Tổ chức truyền thông lưu động, băng rôn, khẩu hiệu, áp phích",
+            "Không triển khai thực hiện"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về hiệu quả của hoạt động tuyên truyền, phổ biến pháp luật về an toàn thực phẩm thời gian qua?",
           "maLoaiCauHoi": 3,
           "isBatBuoc": false,
-          "cauTraLoi": []
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Hiệu quả",
+            "Không hiệu quả"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về công tác tập huấn nghiệp vụ, bồi dưỡng kiến thức pháp luật về an toàn thực phẩm trên địa bàn tỉnh thời gian qua?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Tổ chức thường xuyên theo định kỳ hằng năm",
+            "Có tổ chức nhưng không thường xuyên",
+            "Không tổ chức"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về việc bố trí nguồn lực thực hiện công tác thi hành pháp luật về an toàn thực phẩm tại đơn vị/địa phương?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Bảo đảm (chọn phương án này thì bỏ qua Câu 7)",
+            "Chưa bảo đảm"
+          ]
+        },
+        {
+          "noiDung": "Theo ông/bà, lý do việc bố trí nguồn lực thực hiện công tác thi hành pháp luật về an toàn thực phẩm chưa bảo đảm?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Cán bộ, công chức còn thiếu, kiêm nhiệm nhiều công việc;",
+            "Một số cán bộ còn hạn chế về trình độ chuyên môn, nghiệp vụ, chưa đáp ứng yêu cầu nhiệm vụ;",
+            "Thiếu công cụ hỗ trợ trực tiếp cho cán bộ đi kiểm tra tại hiện trường (như phương tiện di chuyển, máy tính bảo mật dữ liệu, trang phục bảo hộ);",
+            "Cán bộ thường xuyên thay đổi vị trí công tác nên việc nắm bắt nội dung pháp luật về an toàn thực phẩm chưa sâu;"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về việc bố trí kinh phí cho công tác quản lý an toàn thực phẩm tại đơn vị, địa phương?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Đã bảo đảm",
+            "Chưa bảo đảm"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về việc thực hiện trách nhiệm quản lý nhà nước đối với thực phẩm chức năng trên địa bàn tỉnh trong thời gian qua? (Đối với các nội dung về quản lý hồ sơ công bố, lấy mẫu lưu thông thị trường, nếu cán bộ cấp xã không được giao thẩm quyền/không nắm rõ thông tin thì có thể bỏ qua không tích chọn)",
+          "maLoaiCauHoi": 6,
+          "isBatBuoc": false,
+          "cauTraLoi": [
+            "Nghiêm túc, đầy đủ",
+            "Chưa nghiêm túc, kịp thời",
+            "Không thuộc thẩm quyền"
+          ],
+          "cauHoiCon": [
+            {
+              "noiDung": "Công tác quản lý hoạt động sản xuất, kinh doanh thực phẩm chức năng tại các cơ sở thuộc phạm vi quản lý",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Công tác quản lý hồ sơ đăng ký bản công bố sản phẩm đối với thực phẩm chức năng theo quy định",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Công tác kiểm tra, giám sát việc ghi nhãn, nhãn phụ và hướng dẫn sử dụng đối với sản phẩm thực phẩm chức năng",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Công tác kiểm soát nội dung quảng cáo, thông tin giới thiệu sản phẩm thực phẩm chức năng, bảo đảm không gây hiểu nhầm là thuốc chữa bệnh",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc quản lý hoạt động kinh doanh thực phẩm chức năng trên mạng xã hội, sàn thương mại điện tử, livestream, hàng “xách tay”",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Công tác lấy mẫu, kiểm nghiệm, kiểm tra chất lượng, an toàn thực phẩm đối với thực phẩm chức năng trong quá trình lưu thông trên thị trường",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Công tác thanh tra, kiểm tra, phát hiện và xử lý vi phạm đối với tổ chức, cá nhân sản xuất, kinh doanh thực phẩm chức năng không đúng quy định",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            }
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá mức độ chấp hành pháp luật của cá nhân, tổ chức trong các hoạt động sản xuất, kinh doanh, quảng cáo thực phẩm chức năng trên địa bàn thời gian qua?",
+          "maLoaiCauHoi": 6,
+          "isBatBuoc": false,
+          "cauTraLoi": [
+            "Tốt",
+            "Chưa tốt"
+          ],
+          "cauHoiCon": [
+            {
+              "noiDung": "Sản xuất thực phẩm chức năng đúng hồ sơ đăng ký bản công bố sản phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Kinh doanh thực phẩm chức năng bảo đảm nguồn gốc, điều kiện bảo quản, hoá đơn, chứng từ",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Ghi nhãn, nhãn phụ, thông tin về thành phần, công dụng, hướng dẫn sử dụng đúng quy định",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Quảng cáo thực phẩm chức năng đúng nội dung được phép, không thổi phồng công dụng như thuốc chữa bệnh",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Lưu thông, phân phối, thu hồi và xử lý sản phẩm không bảo đảm an toàn theo yêu cầu của cơ quan có thẩm quyền",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            }
+          ]
+        },
+        {
+          "noiDung": "Ông/bà cho biết các hành vi vi phạm pháp luật trong quản lý thực phẩm chức năng đã xảy ra thời gian qua? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Sản xuất, kinh doanh thực phẩm chức năng không bảo đảm điều kiện an toàn thực phẩm hoặc không rõ nguồn gốc, xuất xứ",
+            "Sản xuất hoặc nhập khẩu sản phẩm thuộc diện phải đăng ký bản công bố sản phẩm nhưng không đăng ký bản công bố sản phẩm; hoặc đã sản xuất, nhập khẩu sản phẩm thuộc diện phải đăng ký nhưng không có Giấy tiếp nhận đăng ký bản công bố sản phẩm theo quy định",
+            "Quảng cáo thực phẩm chức năng sai sự thật, quá công dụng, gây hiểu nhầm sản phẩm là thuốc hoặc có tác dụng thay thế thuốc chữa bệnh",
+            "Ghi nhãn sản phẩm thực phẩm chức năng không đúng quy định, thiếu nội dung bắt buộc hoặc gây hiểu nhầm về thành phần, công dụng, chất lượng sản phẩm",
+            "Sử dụng phiếu kiểm nghiệm không hợp lệ, không đúng sản phẩm, không đúng lô hàng hoặc có dấu hiệu giả mạo",
+            "Kinh doanh, quảng cáo thực phẩm chức năng trên mạng xã hội, sàn thương mại điện tử, livestream nhưng không cung cấp đầy đủ thông tin về nguồn gốc, xuất xứ, hồ sơ công bố, tổ chức/cá nhân chịu trách nhiệm về sản phẩm",
+            "Không thu hồi, xử lý hoặc báo cáo cơ quan có thẩm quyền khi phát hiện sản phẩm thực phẩm chức năng không bảo đảm an toàn"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà cho biết những khó khăn, vướng mắc thường gặp trong công tác quản lý thực phẩm chức năng, thực phẩm thời gian qua?",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Khó khăn trong phân biệt, áp dụng thống nhất các khái niệm “thực phẩm chức năng”, “thực phẩm bảo vệ sức khỏe”, “thực phẩm bổ sung”",
+            "Sản phẩm thực phẩm chức năng ngày càng đa dạng, số lượng lưu hành lớn, gây khó khăn cho công tác theo dõi, hậu kiểm",
+            "Hoạt động kinh doanh thực phẩm chức năng qua mạng xã hội, thương mại điện tử, hàng “xách tay” diễn biến phức tạp, khó kiểm soát chủ thể và chất lượng sản phẩm",
+            "Tình trạng quảng cáo thực phẩm chức năng sai sự thật, quảng cáo quá công dụng, gây hiểu nhầm sản phẩm có tác dụng như thuốc còn xảy ra",
+            "Một số sản phẩm tự công bố không đúng nhóm sản phẩm, ghi công dụng như thực phẩm chức năng, gây khó khăn cho công tác quản lý và hậu kiểm",
+            "Một số cơ sở, doanh nghiệp thay đổi địa điểm, tạm ngừng hoạt động, giải thể hoặc không còn hoạt động tại địa chỉ đăng ký, gây khó khăn cho công tác kiểm tra, hậu kiểm",
+            "Việc kiểm soát số lượng sản phẩm thực tế đang lưu thông còn khó khăn do giấy tiếp nhận đăng ký bản công bố sản phẩm không quy định thời hạn hiệu lực",
+            "Chồng chéo hoặc chưa rõ ràng về thẩm quyền thanh tra, kiểm tra, hậu kiểm đối với cơ sở vừa kinh doanh thực phẩm thông thường, vừa kinh doanh thực phẩm chức năng (đặc biệt là các quầy thuốc, nhà thuốc tư nhân)",
+            "Việc hậu kiểm thực phẩm chức năng sau khi được cấp Giấy tiếp nhận đăng ký bản công bố sản phẩm còn khó khăn do sản phẩm lưu thông trên nhiều địa bàn, kinh doanh qua mạng xã hội, sàn thương mại điện tử, livestream, hàng xách tay và khó xác định đầy đủ chủ thể chịu trách nhiệm"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về điều kiện kỹ thuật cho công tác kiểm nghiệm thực phẩm tại đơn vị/địa phương thời gian qua?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Tốt",
+            "Trung bình",
+            "Yếu"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về năng lực và hoạt động kiểm nghiệm thực phẩm phục vụ quản lý nhà nước tại địa phương?",
+          "maLoaiCauHoi": 6,
+          "isBatBuoc": false,
+          "cauTraLoi": [
+            "Tốt",
+            "Chưa tốt",
+            "Không rõ"
+          ],
+          "cauHoiCon": [
+            {
+              "noiDung": "Năng lực cơ sở kiểm nghiệm được chỉ định, công nhận phục vụ quản lý nhà nước về an toàn thực phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Sự phối hợp giữa cơ quan quản lý với cơ sở kiểm nghiệm trong lấy mẫu, bảo quản mẫu, gửi mẫu và trả kết quả",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc trang bị sinh phẩm, test nhanh, kít, hóa chất phục vụ xét nghiệm nhanh về an toàn thực phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc sử dụng kết quả kiểm nghiệm để phân tích, cảnh báo nguy cơ mất an toàn thực phẩm; phục vụ truy xuất nguồn gốc, thu hồi sản phẩm và xử lý vi phạm theo quy định",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            }
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá mức độ chấp hành pháp luật của cá nhân, tổ chức trong hoạt động kiểm nghiệm thực phẩm trên địa bàn tỉnh thời gian qua?",
+          "maLoaiCauHoi": 6,
+          "isBatBuoc": false,
+          "cauTraLoi": [
+            "Tốt",
+            "Chưa tốt",
+            "Không rõ"
+          ],
+          "cauHoiCon": [
+            {
+              "noiDung": "Việc phối hợp cung cấp mẫu, hồ sơ, tài liệu phục vụ kiểm nghiệm thực phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc sử dụng kết quả kiểm nghiệm hợp pháp, còn giá trị, phù hợp với sản phẩm, lô hàng trong quá trình sản xuất, kinh doanh",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc lưu giữ hồ sơ, phiếu kết quả kiểm nghiệm và cung cấp khi cơ quan có thẩm quyền yêu cầu",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc chấp hành yêu cầu khắc phục, thu hồi, xử lý sản phẩm khi kết quả kiểm nghiệm không đạt yêu cầu về an toàn thực phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            }
+          ]
+        },
+        {
+          "noiDung": "Theo ông/bà, thông tin cảnh báo, thu hồi sản phẩm thực phẩm không bảo đảm an toàn có được công khai kịp thời, dễ tiếp cận không?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Kịp thời, dễ tiếp cận",
+            "Có công khai nhưng khó tiếp cận hoặc chưa dễ hiểu",
+            "Chưa kịp thời, chưa dễ tiếp cận"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà cho biết các hành vi vi phạm pháp luật trong kiểm nghiệm thực phẩm đã xảy ra trong thời gian qua? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Lấy mẫu, bảo quản, niêm phong, vận chuyển và gửi mẫu kiểm nghiệm thực phẩm không đúng quy định",
+            "Kiểm nghiệm không đúng chỉ tiêu, phương pháp, tiêu chuẩn, quy chuẩn kỹ thuật hoặc gửi mẫu đến cơ sở kiểm nghiệm không đủ điều kiện theo quy định",
+            "Sử dụng phiếu kết quả kiểm nghiệm không hợp lệ, không đúng mẫu sản phẩm, sửa chữa, làm sai lệch hoặc sử dụng không trung thực kết quả kiểm nghiệm",
+            "Không cung cấp mẫu, hồ sơ, tài liệu phục vụ kiểm nghiệm khi cơ quan chức năng yêu cầu",
+            "Không thu hồi, xử lý sản phẩm khi kết quả kiểm nghiệm xác định sản phẩm không bảo đảm an toàn thực phẩm"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà cho biết những khó khăn, vướng mắc thường gặp trong công tác kiểm nghiệm thực phẩm thời gian qua?",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Cơ sở vật chất, trang thiết bị kiểm nghiệm còn thiếu, lạc hậu; chưa đáp ứng yêu cầu kiểm nghiệm một số chỉ tiêu phức tạp; nhiều mẫu phải gửi đơn vị tuyến trên hoặc đơn vị được chỉ định",
+            "Thiếu phương tiện kiểm tra cơ động, sinh phẩm, test nhanh, kít, hóa chất phục vụ kiểm tra nhanh về an toàn thực phẩm",
+            "Kinh phí lấy mẫu, gửi mẫu, kiểm nghiệm, điều tra, khảo sát còn hạn chế; số lượng mẫu kiểm nghiệm chưa đủ tính đại diện",
+            "Thời gian gửi mẫu, kiểm nghiệm và trả kết quả còn kéo dài, gây khó khăn trong xử lý vi phạm, thu hồi sản phẩm không bảo đảm an toàn thực phẩm",
+            "Chi phí kiểm nghiệm thực phẩm còn cao so với khả năng tài chính của một số cơ sở sản xuất, kinh doanh nhỏ lẻ, dẫn đến tình trạng né tránh, chậm thực hiện kiểm nghiệm hoặc không thực hiện kiểm nghiệm sản phẩm theo quy định",
+            "Một số chỉ tiêu kiểm nghiệm chuyên sâu về hóa chất độc hại, chất cấm, phụ gia, chất bảo quản mới phát sinh chưa đáp ứng kịp thời tại địa phương, phải gửi mẫu đến cơ sở kiểm nghiệm tuyến trên hoặc cơ sở được chỉ định, làm kéo dài thời gian xử lý",
+            "Số lượng mẫu được lấy để kiểm nghiệm, hậu kiểm còn hạn chế, chưa bảo đảm tính đại diện so với số lượng cơ sở, sản phẩm thực tế đang lưu thông trên thị trường"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá công tác quản lý nhà nước đối với cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm?",
+          "maLoaiCauHoi": 6,
+          "isBatBuoc": false,
+          "cauTraLoi": [
+            "Tốt",
+            "Chưa tốt"
+          ],
+          "cauHoiCon": [
+            {
+              "noiDung": "Rà soát, thống kê, cập nhật danh sách cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm trên địa bàn",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Phân loại cơ sở theo ngành, lĩnh vực, quy mô, loại hình sản xuất, kinh doanh để xác định cơ quan quản lý phù hợp",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Tổ chức ký cam kết bảo đảm an toàn thực phẩm đối với các cơ sở thuộc diện phải ký cam kết theo quy định",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Hướng dẫn cơ sở thực hiện điều kiện bảo đảm an toàn thực phẩm theo quy định",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Kiểm tra, hậu kiểm sau khi cơ sở ký cam kết bảo đảm an toàn thực phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Kiểm soát nguồn gốc, xuất xứ, hóa đơn, chứng từ, nhãn hàng hóa, hạn sử dụng và điều kiện bảo quản thực phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Công tác phát hiện, xử lý vi phạm và theo dõi việc khắc phục sau kiểm tra đối với cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            }
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về việc chấp hành pháp luật của các cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm?",
+          "maLoaiCauHoi": 6,
+          "isBatBuoc": false,
+          "cauTraLoi": [
+            "Tốt",
+            "Chưa tốt"
+          ],
+          "cauHoiCon": [
+            {
+              "noiDung": "Việc chấp hành điều kiện bảo đảm an toàn thực phẩm trong sản xuất, kinh doanh, như: vệ sinh cơ sở, dụng cụ, khu vực chế biến, bảo quản, bày bán thực phẩm; nguồn gốc, xuất xứ thực phẩm, nguyên liệu, phụ gia sử dụng tại cơ sở",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc thực hiện ký cam kết bảo đảm an toàn thực phẩm đối với cơ sở thuộc diện phải ký cam kết",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc phối hợp kiểm tra, lấy mẫu, cung cấp thông tin truy xuất nguồn gốc khi cơ quan chức năng yêu cầu",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Việc khắc phục tồn tại, chấp hành xử lý vi phạm, thu hồi hoặc tiêu hủy sản phẩm không bảo đảm an toàn thực phẩm",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            }
+          ]
+        },
+        {
+          "noiDung": "Ông/bà cho biết việc triển khai ký Bản cam kết sản xuất, kinh doanh thực phẩm an toàn trên địa bàn tỉnh hiện nay như thế nào?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Triển khai đồng bộ, tỷ lệ ký cam kết đạt trên 90% đối tượng thuộc diện quản lý, có sổ theo dõi chặt chẽ",
+            "Đã thực hiện nhưng chưa bao quát hết đối tượng phải ký cam kết",
+            "Có nơi còn mang tính hình thức, chưa gắn với hướng dẫn và kiểm tra sau ký cam kết"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà cho biết những hành vi vi phạm pháp luật về an toàn thực phẩm đã xảy ra tại các cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm trong thời gian qua? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Không thực hiện ký cam kết bảo đảm an toàn thực phẩm hoặc không thực hiện đúng nội dung đã cam kết",
+            "Không duy trì điều kiện bảo đảm an toàn thực phẩm trong sản xuất, kinh doanh, chế biến, bảo quản, vận chuyển, bày bán thực phẩm",
+            "Không bảo đảm vệ sinh cơ sở, trang thiết bị, dụng cụ, nguồn nước; không bảo đảm điều kiện sức khỏe, kiến thức, thực hành vệ sinh của người trực tiếp sản xuất, kinh doanh thực phẩm",
+            "Sử dụng thực phẩm, nguyên liệu, phụ gia, chất hỗ trợ chế biến không rõ nguồn gốc, xuất xứ, hết hạn sử dụng hoặc không bảo đảm an toàn"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà cho biết những khó khăn, vướng mắc thường gặp trong quản lý cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm?",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Cơ sở phần lớn có quy mô nhỏ lẻ, hộ gia đình, kinh doanh thời vụ, đa ngành hàng, đa loại hình, thường xuyên biến động hoặc không có địa điểm cố định, gây khó khăn trong việc rà soát, thống kê, phân loại theo ngành, lĩnh vực quản lý và tổ chức kiểm tra, hậu kiểm theo quy định",
+            "Việc quản lý cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm giữa các ngành còn có điểm chưa thống nhất, nhất là về đối tượng phải ký cam kết, hình thức quản lý, trách nhiệm hậu kiểm và chế độ thông tin, báo cáo",
+            "Một số cơ sở kinh doanh thức ăn đường phố nhỏ lẻ, địa điểm kinh doanh không cố định nên khó khăn trong việc chấp hành và đáp ứng đầy đủ các quy định về điều kiện an toàn thực phẩm trong sản xuất, kinh doanh thực phẩm",
+            "Việc ký cam kết bảo đảm an toàn thực phẩm và kiểm tra sau ký cam kết còn hạn chế, chưa bao quát đầy đủ các cơ sở thuộc diện quản lý",
+            "Một số địa phương còn thiếu kinh nghiệm quản lý đối tượng nhỏ lẻ trong khi số lượng các đối tượng sản xuất, kinh doanh nhỏ lẻ tại các địa phương là rất lớn nên việc thực thi và xử lý vi phạm các quy định về an toàn thực phẩm còn gặp nhiều khó khăn",
+            "Nhân lực, kinh phí, phương tiện, trang thiết bị phục vụ kiểm tra, hậu kiểm còn hạn chế",
+            "Nhận thức của các chủ hộ kinh doanh nhỏ lẻ, thức ăn đường phố còn rất hạn chế",
+            "Thiếu nhân lực quản lý ở cấp cơ sở (sau khi sáp nhập hoặc tinh gọn bộ máy)",
+            "Thẩm quyền xử lý vi phạm của cấp xã đối với loại hình này còn gặp vướng mắc, khó áp dụng",
+            "Chưa có hệ thống cơ sở dữ liệu dùng chung để theo dõi biến động của các cơ sở này"
+          ]
+        },
+        {
+          "noiDung": "Thời gian qua, đơn vị/địa phương ông/bà đã từng tiếp nhận đơn thư khiếu nại, tố cáo liên quan đến an toàn thực phẩm chưa?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Có tiếp nhận",
+            "Không tiếp nhận"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về tình hình giải quyết khiếu nại, tố cáo về an toàn thực phẩm thời gian qua?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Giải quyết kịp thời, đúng quy định pháp luật về khiếu nại, tố cáo",
+            "Giải quyết chưa kịp thời"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá như thế nào về việc triển khai và hiệu quả công tác thanh tra, kiểm tra việc chấp hành pháp luật về an toàn thực phẩm trong thời gian qua?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Triển khai thường xuyên, kịp thời phát hiện và xử lý vi phạm theo quy định",
+            "Triển khai chưa thường xuyên; việc phát hiện, xử lý vi phạm còn hạn chế",
+            "Có phát hiện vi phạm nhưng việc xử lý chưa kịp thời hoặc chưa đầy đủ",
+            "Không triển khai công tác thanh tra, kiểm tra"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà cho biết các hình thức xử lý vi phạm pháp luật về an toàn thực phẩm mà cơ quan có thẩm quyền đã áp dụng thời gian qua? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Xử lý vi phạm hành chính",
+            "Xử lý hình sự",
+            "Chưa phát hiện/chưa áp dụng hình thức xử lý",
+            "Không biết"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá về tính kịp thời, hiệu quả và những khó khăn khi áp dụng các quy định mới của Nghị định số 90/2026/NĐ-CP trong việc xử lý vi phạm an toàn thực phẩm?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Kịp thời, hiệu quả, đáp ứng yêu cầu về xử lý hành vi vi phạm",
+            "Chưa kịp thời, chưa hiệu quả, còn có khó khăn vướng mắc"
+          ]
+        },
+        {
+          "noiDung": "Theo ông/bà, nguyên nhân chủ yếu dẫn đến vi phạm pháp luật về an toàn thực phẩm là gì? (có thể lựa chọn nhiều phương án)",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Hệ thống pháp luật còn có hạn chế, bất cập",
+            "Ý thức chấp hành pháp luật của một số cơ sở sản xuất, kinh doanh còn hạn chế",
+            "Nhận thức và thói quen tiêu dùng của một bộ phận người dân còn hạn chế; chưa quan tâm đầy đủ đến nguồn gốc, nhãn hàng hóa, hạn sử dụng, chất lượng sản phẩm và nội dung quảng cáo khi lựa chọn, sử dụng thực phẩm",
+            "Công tác tuyên truyền, phổ biến pháp luật chưa thường xuyên, chưa dễ hiểu",
+            "Công tác kiểm tra, xử lý vi phạm chưa thường xuyên hoặc chưa đủ sức răn đe",
+            "Việc kinh doanh thực phẩm chức năng qua mạng xã hội, thương mại điện tử, hàng “xách tay” khó kiểm soát nguồn gốc, chất lượng và chủ thể vi phạm",
+            "Công tác lấy mẫu, kiểm nghiệm, công khai kết quả kiểm nghiệm, cảnh báo và thu hồi sản phẩm không bảo đảm an toàn thực phẩm còn hạn chế",
+            "Một số cơ sở nhỏ lẻ, thức ăn đường phố, kinh doanh thời vụ chưa chấp hành nghiêm điều kiện bảo đảm an toàn thực phẩm"
+          ]
+        },
+        {
+          "noiDung": "Ông/bà đánh giá như thế nào về hoạt động phối hợp giữa các cơ quan, đơn vị trong quản lý nhà nước về an toàn thực phẩm thời gian qua?",
+          "maLoaiCauHoi": 3,
+          "isBatBuoc": false,
+          "isLyDoKhac": false,
+          "cauTraLoi": [
+            "Tốt, rõ đầu mối và trách nhiệm phối hợp",
+            "Cơ bản ổn định nhưng còn thiếu cơ chế chia sẻ dữ liệu, thông tin kiểm tra, kiểm nghiệm",
+            "Chưa tốt, còn chồng chéo hoặc bỏ sót đối tượng quản lý",
+            "Không có ý kiến"
+          ]
+        },
+        {
+          "noiDung": "Sau khi thực hiện mô hình chính quyền địa phương 02 cấp, việc xác định thẩm quyền, đầu mối và trách nhiệm quản lý nhà nước về an toàn thực phẩm tại địa phương như thế nào?",
+          "maLoaiCauHoi": 6,
+          "isBatBuoc": false,
+          "cauTraLoi": [
+            "Tốt/ổn định",
+            "Còn khó khăn"
+          ],
+          "cauHoiCon": [
+            {
+              "noiDung": "Bàn giao hồ sơ, dữ liệu quản lý cơ sở an toàn thực phẩm giữa các cơ quan, đơn vị, địa bàn.",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Xác định thẩm quyền kiểm tra, xử phạt vi phạm hành chính và trách nhiệm theo dõi địa bàn theo mô hình tổ chức mới.",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Phân công đầu mối quản lý đối với thực phẩm chức năng, kiểm nghiệm thực phẩm và cơ sở không thuộc diện cấp Giấy chứng nhận.",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Biên chế chuyên trách làm công tác an toàn thực phẩm tại Ủy ban nhân dân cấp xã",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Năng lực của đội ngũ cán bộ kiêm nhiệm phụ trách an toàn thực phẩm ở cấp xã sau khi tinh gọn bộ máy.",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            },
+            {
+              "noiDung": "Cơ chế phối hợp, chia sẻ thông tin giữa cấp tỉnh, cấp xã và các ngành chuyên môn.",
+              "maLoaiCauHoi": 3,
+              "isBatBuoc": false,
+              "cauTraLoi": []
+            }
+          ]
+        },
+        {
+          "noiDung": "Theo ông/bà, cần có giải pháp gì để nâng cao hiệu lực, hiệu quả quản lý nhà nước về thực phẩm chức năng, kiểm nghiệm thực phẩm và quản lý cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm?",
+          "maLoaiCauHoi": 2,
+          "isBatBuoc": false,
+          "isLyDoKhac": true,
+          "cauTraLoi": [
+            "Hoàn thiện, sửa đổi, bổ sung quy định pháp luật theo hướng thống nhất, rõ trách nhiệm, dễ áp dụng trong thực tiễn quản lý tại địa phương",
+            "Quy định rõ hơn trách nhiệm quản lý, phân công đầu mối, cơ chế phối hợp giữa các ngành, các cấp trong mô hình chính quyền địa phương 02 cấp sau sáp nhập",
+            "Tăng cường hậu kiểm đối với thực phẩm chức năng, nhất là sản phẩm tự công bố, quảng cáo trên mạng xã hội, thương mại điện tử, livestream",
+            "Siết chặt quản lý quảng cáo thực phẩm chức năng, xử lý nghiêm hành vi quảng cáo sai sự thật, quảng cáo quá công dụng, gây hiểu nhầm sản phẩm có tác dụng như thuốc",
+            "Đầu tư cơ sở vật chất, trang thiết bị, phương tiện kiểm tra cơ động, sinh phẩm, test nhanh, hóa chất phục vụ kiểm nghiệm, kiểm tra nhanh an toàn thực phẩm",
+            "Bảo đảm kinh phí lấy mẫu, gửi mẫu, kiểm nghiệm, hậu kiểm, điều tra, khảo sát và xử lý vi phạm về an toàn thực phẩm",
+            "Nâng cao năng lực phòng kiểm nghiệm, rút ngắn thời gian trả kết quả kiểm nghiệm, đáp ứng yêu cầu xử lý vi phạm, truy xuất nguồn gốc, thu hồi sản phẩm không bảo đảm an toàn",
+            "Kiện toàn, bồi dưỡng, tập huấn chuyên môn chuyên sâu cho đội ngũ cán bộ kiêm nhiệm làm công tác an toàn thực phẩm tại Ủy ban nhân dân cấp xã sau khi thực hiện mô hình sáp nhập, tổ chức lại bộ máy hành chính",
+            "Tăng cường rà soát, thống kê, phân loại, cập nhật dữ liệu cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm",
+            "Đẩy mạnh ký cam kết, kiểm tra sau ký cam kết và hậu kiểm đối với cơ sở nhỏ lẻ, hộ gia đình, kinh doanh thời vụ, thức ăn đường phố, cơ sở trong chợ",
+            "Tăng cường tuyên truyền, tập huấn, hướng dẫn pháp luật về an toàn thực phẩm cho cơ sở sản xuất, kinh doanh và người tiêu dùng",
+            "Bồi dưỡng, tập huấn chuyên môn, nghiệp vụ cho cán bộ làm công tác quản lý an toàn thực phẩm ở cấp cơ sở, nhất là sau sáp nhập, tổ chức lại bộ máy",
+            "Xây dựng cơ sở dữ liệu dùng chung về cơ sở sản xuất, kinh doanh thực phẩm, kết quả kiểm nghiệm, hậu kiểm, xử lý vi phạm và cảnh báo nguy cơ an toàn thực phẩm"
+          ]
+        },
+        {
+          "noiDung": "Ý kiến đề xuất, kiến nghị khác của Ông/Bà nhằm tháo gỡ khó khăn, vướng mắc trong công tác thi hành pháp luật về an toàn thực phẩm tại địa phương (đặc biệt là sau khi thực hiện mô hình chính quyền địa phương 02 cấp)?",
+          "maLoaiCauHoi": 4,
+          "isBatBuoc": false
         }
       ]
-    },
-    {
-      "noiDung": "Câu 2. Ông/bà đánh giá về tình hình ban hành văn bản chỉ đạo, hướng dẫn áp dụng văn bản quy phạm pháp luật về an toàn thực phẩm trên địa bàn tỉnh thời gian qua?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Kịp thời, đầy đủ",
-        "Chưa kịp thời, đầy đủ"
-      ]
-    },
-    {
-      "noiDung": "Câu 3. Đơn vị/địa phương đã tuyên truyền, phổ biến pháp luật về an toàn thực phẩm bằng hình thức nào? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Thông qua hội nghị, tọa đàm, hội thảo",
-        "Qua các trang thông tin điện tử, báo chí, mạng xã hội",
-        "Qua hệ thống phát thanh, truyền hình",
-        "Qua tài liệu tuyên truyền: sách pháp luật, sổ tay, tờ rơi, tờ gấp",
-        "Qua các cuộc thi tìm hiểu pháp luật",
-        "Qua các cuộc họp thôn, buôn, tổ dân phố",
-        "Tổ chức truyền thông lưu động, băng rôn, khẩu hiệu, áp phích",
-        "Không triển khai thực hiện"
-      ]
-    },
-    {
-      "noiDung": "Câu 4. Ông/bà đánh giá về hiệu quả của hoạt động tuyên truyền, phổ biến pháp luật về an toàn thực phẩm thời gian qua?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Hiệu quả",
-        "Không hiệu quả"
-      ]
-    },
-    {
-      "noiDung": "Câu 5. Ông/bà đánh giá về công tác tập huấn nghiệp vụ, bồi dưỡng kiến thức pháp luật về an toàn thực phẩm trên địa bàn tỉnh thời gian qua?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Tổ chức thường xuyên theo định kỳ hằng năm",
-        "Có tổ chức nhưng không thường xuyên",
-        "Không tổ chức"
-      ]
-    },
-    {
-      "noiDung": "Câu 6. Ông/bà đánh giá về việc bố trí nguồn lực thực hiện công tác thi hành pháp luật về an toàn thực phẩm tại đơn vị/địa phương?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Bảo đảm (chọn phương án này thì bỏ qua Câu 7)",
-        "Chưa bảo đảm"
-      ]
-    },
-    {
-      "noiDung": "Câu 7. Theo ông/bà, lý do việc bố trí nguồn lực thực hiện công tác thi hành pháp luật về an toàn thực phẩm chưa bảo đảm?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Cán bộ, công chức còn thiếu, kiêm nhiệm nhiều công việc;",
-        "Một số cán bộ còn hạn chế về trình độ chuyên môn, nghiệp vụ, chưa đáp ứng yêu cầu nhiệm vụ;",
-        "Thiếu công cụ hỗ trợ trực tiếp cho cán bộ đi kiểm tra tại hiện trường (như phương tiện di chuyển, máy tính bảo mật dữ liệu, trang phục bảo hộ);",
-        "Cán bộ thường xuyên thay đổi vị trí công tác nên việc nắm bắt nội dung pháp luật về an toàn thực phẩm chưa sâu;"
-      ]
-    },
-    {
-      "noiDung": "Câu 8. Ông/bà đánh giá về việc bố trí kinh phí cho công tác quản lý an toàn thực phẩm tại đơn vị, địa phương?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Đã bảo đảm",
-        "Chưa bảo đảm"
-      ]
-    },
-    {
-      "noiDung": "Câu 9. Ông/bà đánh giá về việc thực hiện trách nhiệm quản lý nhà nước đối với thực phẩm chức năng trên địa bàn tỉnh trong thời gian qua? (Đối với các nội dung về quản lý hồ sơ công bố, lấy mẫu lưu thông thị trường, nếu cán bộ cấp xã không được giao thẩm quyền/không nắm rõ thông tin thì có thể bỏ qua không tích chọn)",
-      "maLoaiCauHoi": 6,
-      "isBatBuoc": false,
-      "cauTraLoi": [
-        "Nghiêm túc, đầy đủ",
-        "Chưa nghiêm túc, kịp thời",
-        "Không thuộc thẩm quyền"
-      ],
-      "cauHoiCon": [
-        {
-          "noiDung": "Công tác quản lý hoạt động sản xuất, kinh doanh thực phẩm chức năng tại các cơ sở thuộc phạm vi quản lý",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Công tác quản lý hồ sơ đăng ký bản công bố sản phẩm đối với thực phẩm chức năng theo quy định",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Công tác kiểm tra, giám sát việc ghi nhãn, nhãn phụ và hướng dẫn sử dụng đối với sản phẩm thực phẩm chức năng",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Công tác kiểm soát nội dung quảng cáo, thông tin giới thiệu sản phẩm thực phẩm chức năng, bảo đảm không gây hiểu nhầm là thuốc chữa bệnh",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc quản lý hoạt động kinh doanh thực phẩm chức năng trên mạng xã hội, sàn thương mại điện tử, livestream, hàng “xách tay”",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Công tác lấy mẫu, kiểm nghiệm, kiểm tra chất lượng, an toàn thực phẩm đối với thực phẩm chức năng trong quá trình lưu thông trên thị trường",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Công tác thanh tra, kiểm tra, phát hiện và xử lý vi phạm đối với tổ chức, cá nhân sản xuất, kinh doanh thực phẩm chức năng không đúng quy định",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        }
-      ]
-    },
-    {
-      "noiDung": "Câu 10. Ông/bà đánh giá mức độ chấp hành pháp luật của cá nhân, tổ chức trong các hoạt động sản xuất, kinh doanh, quảng cáo thực phẩm chức năng trên địa bàn thời gian qua?",
-      "maLoaiCauHoi": 6,
-      "isBatBuoc": false,
-      "cauTraLoi": [
-        "Tốt",
-        "Chưa tốt"
-      ],
-      "cauHoiCon": [
-        {
-          "noiDung": "Sản xuất thực phẩm chức năng đúng hồ sơ đăng ký bản công bố sản phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Kinh doanh thực phẩm chức năng bảo đảm nguồn gốc, điều kiện bảo quản, hoá đơn, chứng từ",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Ghi nhãn, nhãn phụ, thông tin về thành phần, công dụng, hướng dẫn sử dụng đúng quy định",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Quảng cáo thực phẩm chức năng đúng nội dung được phép, không thổi phồng công dụng như thuốc chữa bệnh",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Lưu thông, phân phối, thu hồi và xử lý sản phẩm không bảo đảm an toàn theo yêu cầu của cơ quan có thẩm quyền",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        }
-      ]
-    },
-    {
-      "noiDung": "Câu 11. Ông/bà cho biết các hành vi vi phạm pháp luật trong quản lý thực phẩm chức năng đã xảy ra thời gian qua? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Sản xuất, kinh doanh thực phẩm chức năng không bảo đảm điều kiện an toàn thực phẩm hoặc không rõ nguồn gốc, xuất xứ",
-        "Sản xuất hoặc nhập khẩu sản phẩm thuộc diện phải đăng ký bản công bố sản phẩm nhưng không đăng ký bản công bố sản phẩm; hoặc đã sản xuất, nhập khẩu sản phẩm thuộc diện phải đăng ký nhưng không có Giấy tiếp nhận đăng ký bản công bố sản phẩm theo quy định",
-        "Quảng cáo thực phẩm chức năng sai sự thật, quá công dụng, gây hiểu nhầm sản phẩm là thuốc hoặc có tác dụng thay thế thuốc chữa bệnh",
-        "Ghi nhãn sản phẩm thực phẩm chức năng không đúng quy định, thiếu nội dung bắt buộc hoặc gây hiểu nhầm về thành phần, công dụng, chất lượng sản phẩm",
-        "Sử dụng phiếu kiểm nghiệm không hợp lệ, không đúng sản phẩm, không đúng lô hàng hoặc có dấu hiệu giả mạo",
-        "Kinh doanh, quảng cáo thực phẩm chức năng trên mạng xã hội, sàn thương mại điện tử, livestream nhưng không cung cấp đầy đủ thông tin về nguồn gốc, xuất xứ, hồ sơ công bố, tổ chức/cá nhân chịu trách nhiệm về sản phẩm",
-        "Không thu hồi, xử lý hoặc báo cáo cơ quan có thẩm quyền khi phát hiện sản phẩm thực phẩm chức năng không bảo đảm an toàn"
-      ]
-    },
-    {
-      "noiDung": "Câu 12. Ông/bà cho biết những khó khăn, vướng mắc thường gặp trong công tác quản lý thực phẩm chức năng, thực phẩm thời gian qua?",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Khó khăn trong phân biệt, áp dụng thống nhất các khái niệm “thực phẩm chức năng”, “thực phẩm bảo vệ sức khỏe”, “thực phẩm bổ sung”",
-        "Sản phẩm thực phẩm chức năng ngày càng đa dạng, số lượng lưu hành lớn, gây khó khăn cho công tác theo dõi, hậu kiểm",
-        "Hoạt động kinh doanh thực phẩm chức năng qua mạng xã hội, thương mại điện tử, hàng “xách tay” diễn biến phức tạp, khó kiểm soát chủ thể và chất lượng sản phẩm",
-        "Tình trạng quảng cáo thực phẩm chức năng sai sự thật, quảng cáo quá công dụng, gây hiểu nhầm sản phẩm có tác dụng như thuốc còn xảy ra",
-        "Một số sản phẩm tự công bố không đúng nhóm sản phẩm, ghi công dụng như thực phẩm chức năng, gây khó khăn cho công tác quản lý và hậu kiểm",
-        "Một số cơ sở, doanh nghiệp thay đổi địa điểm, tạm ngừng hoạt động, giải thể hoặc không còn hoạt động tại địa chỉ đăng ký, gây khó khăn cho công tác kiểm tra, hậu kiểm",
-        "Việc kiểm soát số lượng sản phẩm thực tế đang lưu thông còn khó khăn do giấy tiếp nhận đăng ký bản công bố sản phẩm không quy định thời hạn hiệu lực",
-        "Chồng chéo hoặc chưa rõ ràng về thẩm quyền thanh tra, kiểm tra, hậu kiểm đối với cơ sở vừa kinh doanh thực phẩm thông thường, vừa kinh doanh thực phẩm chức năng (đặc biệt là các quầy thuốc, nhà thuốc tư nhân)",
-        "Việc hậu kiểm thực phẩm chức năng sau khi được cấp Giấy tiếp nhận đăng ký bản công bố sản phẩm còn khó khăn do sản phẩm lưu thông trên nhiều địa bàn, kinh doanh qua mạng xã hội, sàn thương mại điện tử, livestream, hàng xách tay và khó xác định đầy đủ chủ thể chịu trách nhiệm"
-      ]
-    },
-    {
-      "noiDung": "Câu 13. Ông/bà đánh giá về điều kiện kỹ thuật cho công tác kiểm nghiệm thực phẩm tại đơn vị/địa phương thời gian qua?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Tốt",
-        "Trung bình",
-        "Yếu"
-      ]
-    },
-    {
-      "noiDung": "Câu 14. Ông/bà đánh giá về năng lực và hoạt động kiểm nghiệm thực phẩm phục vụ quản lý nhà nước tại địa phương?",
-      "maLoaiCauHoi": 6,
-      "isBatBuoc": false,
-      "cauTraLoi": [
-        "Tốt",
-        "Chưa tốt",
-        "Không rõ"
-      ],
-      "cauHoiCon": [
-        {
-          "noiDung": "Năng lực cơ sở kiểm nghiệm được chỉ định, công nhận phục vụ quản lý nhà nước về an toàn thực phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Sự phối hợp giữa cơ quan quản lý với cơ sở kiểm nghiệm trong lấy mẫu, bảo quản mẫu, gửi mẫu và trả kết quả",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc trang bị sinh phẩm, test nhanh, kít, hóa chất phục vụ xét nghiệm nhanh về an toàn thực phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc sử dụng kết quả kiểm nghiệm để phân tích, cảnh báo nguy cơ mất an toàn thực phẩm; phục vụ truy xuất nguồn gốc, thu hồi sản phẩm và xử lý vi phạm theo quy định",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        }
-      ]
-    },
-    {
-      "noiDung": "Câu 15. Ông/bà đánh giá mức độ chấp hành pháp luật của cá nhân, tổ chức trong hoạt động kiểm nghiệm thực phẩm trên địa bàn tỉnh thời gian qua?",
-      "maLoaiCauHoi": 6,
-      "isBatBuoc": false,
-      "cauTraLoi": [
-        "Tốt",
-        "Chưa tốt",
-        "Không rõ"
-      ],
-      "cauHoiCon": [
-        {
-          "noiDung": "Việc phối hợp cung cấp mẫu, hồ sơ, tài liệu phục vụ kiểm nghiệm thực phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc sử dụng kết quả kiểm nghiệm hợp pháp, còn giá trị, phù hợp với sản phẩm, lô hàng trong quá trình sản xuất, kinh doanh",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc lưu giữ hồ sơ, phiếu kết quả kiểm nghiệm và cung cấp khi cơ quan có thẩm quyền yêu cầu",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc chấp hành yêu cầu khắc phục, thu hồi, xử lý sản phẩm khi kết quả kiểm nghiệm không đạt yêu cầu về an toàn thực phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        }
-      ]
-    },
-    {
-      "noiDung": "Câu 16. Theo ông/bà, thông tin cảnh báo, thu hồi sản phẩm thực phẩm không bảo đảm an toàn có được công khai kịp thời, dễ tiếp cận không?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Kịp thời, dễ tiếp cận",
-        "Có công khai nhưng khó tiếp cận hoặc chưa dễ hiểu",
-        "Chưa kịp thời, chưa dễ tiếp cận"
-      ]
-    },
-    {
-      "noiDung": "Câu 17. Ông/bà cho biết các hành vi vi phạm pháp luật trong kiểm nghiệm thực phẩm đã xảy ra trong thời gian qua? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Lấy mẫu, bảo quản, niêm phong, vận chuyển và gửi mẫu kiểm nghiệm thực phẩm không đúng quy định",
-        "Kiểm nghiệm không đúng chỉ tiêu, phương pháp, tiêu chuẩn, quy chuẩn kỹ thuật hoặc gửi mẫu đến cơ sở kiểm nghiệm không đủ điều kiện theo quy định",
-        "Sử dụng phiếu kết quả kiểm nghiệm không hợp lệ, không đúng mẫu sản phẩm, sửa chữa, làm sai lệch hoặc sử dụng không trung thực kết quả kiểm nghiệm",
-        "Không cung cấp mẫu, hồ sơ, tài liệu phục vụ kiểm nghiệm khi cơ quan chức năng yêu cầu",
-        "Không thu hồi, xử lý sản phẩm khi kết quả kiểm nghiệm xác định sản phẩm không bảo đảm an toàn thực phẩm"
-      ]
-    },
-    {
-      "noiDung": "Câu 18. Ông/bà cho biết những khó khăn, vướng mắc thường gặp trong công tác kiểm nghiệm thực phẩm thời gian qua?",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Cơ sở vật chất, trang thiết bị kiểm nghiệm còn thiếu, lạc hậu; chưa đáp ứng yêu cầu kiểm nghiệm một số chỉ tiêu phức tạp; nhiều mẫu phải gửi đơn vị tuyến trên hoặc đơn vị được chỉ định",
-        "Thiếu phương tiện kiểm tra cơ động, sinh phẩm, test nhanh, kít, hóa chất phục vụ kiểm tra nhanh về an toàn thực phẩm",
-        "Kinh phí lấy mẫu, gửi mẫu, kiểm nghiệm, điều tra, khảo sát còn hạn chế; số lượng mẫu kiểm nghiệm chưa đủ tính đại diện",
-        "Thời gian gửi mẫu, kiểm nghiệm và trả kết quả còn kéo dài, gây khó khăn trong xử lý vi phạm, thu hồi sản phẩm không bảo đảm an toàn thực phẩm",
-        "Chi phí kiểm nghiệm thực phẩm còn cao so với khả năng tài chính của một số cơ sở sản xuất, kinh doanh nhỏ lẻ, dẫn đến tình trạng né tránh, chậm thực hiện kiểm nghiệm hoặc không thực hiện kiểm nghiệm sản phẩm theo quy định",
-        "Một số chỉ tiêu kiểm nghiệm chuyên sâu về hóa chất độc hại, chất cấm, phụ gia, chất bảo quản mới phát sinh chưa đáp ứng kịp thời tại địa phương, phải gửi mẫu đến cơ sở kiểm nghiệm tuyến trên hoặc cơ sở được chỉ định, làm kéo dài thời gian xử lý",
-        "Số lượng mẫu được lấy để kiểm nghiệm, hậu kiểm còn hạn chế, chưa bảo đảm tính đại diện so với số lượng cơ sở, sản phẩm thực tế đang lưu thông trên thị trường"
-      ]
-    },
-    {
-      "noiDung": "Câu 19. Ông/bà đánh giá công tác quản lý nhà nước đối với cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm?",
-      "maLoaiCauHoi": 6,
-      "isBatBuoc": false,
-      "cauTraLoi": [
-        "Tốt",
-        "Chưa tốt"
-      ],
-      "cauHoiCon": [
-        {
-          "noiDung": "Rà soát, thống kê, cập nhật danh sách cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm trên địa bàn",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Phân loại cơ sở theo ngành, lĩnh vực, quy mô, loại hình sản xuất, kinh doanh để xác định cơ quan quản lý phù hợp",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Tổ chức ký cam kết bảo đảm an toàn thực phẩm đối với các cơ sở thuộc diện phải ký cam kết theo quy định",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Hướng dẫn cơ sở thực hiện điều kiện bảo đảm an toàn thực phẩm theo quy định",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Kiểm tra, hậu kiểm sau khi cơ sở ký cam kết bảo đảm an toàn thực phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Kiểm soát nguồn gốc, xuất xứ, hóa đơn, chứng từ, nhãn hàng hóa, hạn sử dụng và điều kiện bảo quản thực phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Công tác phát hiện, xử lý vi phạm và theo dõi việc khắc phục sau kiểm tra đối với cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        }
-      ]
-    },
-    {
-      "noiDung": "Câu 20. Ông/bà đánh giá về việc chấp hành pháp luật của các cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm?",
-      "maLoaiCauHoi": 6,
-      "isBatBuoc": false,
-      "cauTraLoi": [
-        "Tốt",
-        "Chưa tốt"
-      ],
-      "cauHoiCon": [
-        {
-          "noiDung": "Việc chấp hành điều kiện bảo đảm an toàn thực phẩm trong sản xuất, kinh doanh, như: vệ sinh cơ sở, dụng cụ, khu vực chế biến, bảo quản, bày bán thực phẩm; nguồn gốc, xuất xứ thực phẩm, nguyên liệu, phụ gia sử dụng tại cơ sở",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc thực hiện ký cam kết bảo đảm an toàn thực phẩm đối với cơ sở thuộc diện phải ký cam kết",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc phối hợp kiểm tra, lấy mẫu, cung cấp thông tin truy xuất nguồn gốc khi cơ quan chức năng yêu cầu",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Việc khắc phục tồn tại, chấp hành xử lý vi phạm, thu hồi hoặc tiêu hủy sản phẩm không bảo đảm an toàn thực phẩm",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        }
-      ]
-    },
-    {
-      "noiDung": "Câu 21. Ông/bà cho biết việc triển khai ký Bản cam kết sản xuất, kinh doanh thực phẩm an toàn trên địa bàn tỉnh hiện nay như thế nào?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Triển khai đồng bộ, tỷ lệ ký cam kết đạt trên 90% đối tượng thuộc diện quản lý, có sổ theo dõi chặt chẽ",
-        "Đã thực hiện nhưng chưa bao quát hết đối tượng phải ký cam kết",
-        "Có nơi còn mang tính hình thức, chưa gắn với hướng dẫn và kiểm tra sau ký cam kết"
-      ]
-    },
-    {
-      "noiDung": "Câu 22. Ông/bà cho biết những hành vi vi phạm pháp luật về an toàn thực phẩm đã xảy ra tại các cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm trong thời gian qua? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Không thực hiện ký cam kết bảo đảm an toàn thực phẩm hoặc không thực hiện đúng nội dung đã cam kết",
-        "Không duy trì điều kiện bảo đảm an toàn thực phẩm trong sản xuất, kinh doanh, chế biến, bảo quản, vận chuyển, bày bán thực phẩm",
-        "Không bảo đảm vệ sinh cơ sở, trang thiết bị, dụng cụ, nguồn nước; không bảo đảm điều kiện sức khỏe, kiến thức, thực hành vệ sinh của người trực tiếp sản xuất, kinh doanh thực phẩm",
-        "Sử dụng thực phẩm, nguyên liệu, phụ gia, chất hỗ trợ chế biến không rõ nguồn gốc, xuất xứ, hết hạn sử dụng hoặc không bảo đảm an toàn"
-      ]
-    },
-    {
-      "noiDung": "Câu 23. Ông/bà cho biết những khó khăn, vướng mắc thường gặp trong quản lý cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm?",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Cơ sở phần lớn có quy mô nhỏ lẻ, hộ gia đình, kinh doanh thời vụ, đa ngành hàng, đa loại hình, thường xuyên biến động hoặc không có địa điểm cố định, gây khó khăn trong việc rà soát, thống kê, phân loại theo ngành, lĩnh vực quản lý và tổ chức kiểm tra, hậu kiểm theo quy định",
-        "Việc quản lý cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm giữa các ngành còn có điểm chưa thống nhất, nhất là về đối tượng phải ký cam kết, hình thức quản lý, trách nhiệm hậu kiểm và chế độ thông tin, báo cáo",
-        "Một số cơ sở kinh doanh thức ăn đường phố nhỏ lẻ, địa điểm kinh doanh không cố định nên khó khăn trong việc chấp hành và đáp ứng đầy đủ các quy định về điều kiện an toàn thực phẩm trong sản xuất, kinh doanh thực phẩm",
-        "Việc ký cam kết bảo đảm an toàn thực phẩm và kiểm tra sau ký cam kết còn hạn chế, chưa bao quát đầy đủ các cơ sở thuộc diện quản lý",
-        "Một số địa phương còn thiếu kinh nghiệm quản lý đối tượng nhỏ lẻ trong khi số lượng các đối tượng sản xuất, kinh doanh nhỏ lẻ tại các địa phương là rất lớn nên việc thực thi và xử lý vi phạm các quy định về an toàn thực phẩm còn gặp nhiều khó khăn",
-        "Nhân lực, kinh phí, phương tiện, trang thiết bị phục vụ kiểm tra, hậu kiểm còn hạn chế",
-        "Nhận thức của các chủ hộ kinh doanh nhỏ lẻ, thức ăn đường phố còn rất hạn chế",
-        "Thiếu nhân lực quản lý ở cấp cơ sở (sau khi sáp nhập hoặc tinh gọn bộ máy)",
-        "Thẩm quyền xử lý vi phạm của cấp xã đối với loại hình này còn gặp vướng mắc, khó áp dụng",
-        "Chưa có hệ thống cơ sở dữ liệu dùng chung để theo dõi biến động của các cơ sở này"
-      ]
-    },
-    {
-      "noiDung": "Câu 24. Thời gian qua, đơn vị/địa phương ông/bà đã từng tiếp nhận đơn thư khiếu nại, tố cáo liên quan đến an toàn thực phẩm chưa?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Có tiếp nhận",
-        "Không tiếp nhận"
-      ]
-    },
-    {
-      "noiDung": "Câu 25. Ông/bà đánh giá về tình hình giải quyết khiếu nại, tố cáo về an toàn thực phẩm thời gian qua?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Giải quyết kịp thời, đúng quy định pháp luật về khiếu nại, tố cáo",
-        "Giải quyết chưa kịp thời"
-      ]
-    },
-    {
-      "noiDung": "Câu 26. Ông/bà đánh giá như thế nào về việc triển khai và hiệu quả công tác thanh tra, kiểm tra việc chấp hành pháp luật về an toàn thực phẩm trong thời gian qua?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Triển khai thường xuyên, kịp thời phát hiện và xử lý vi phạm theo quy định",
-        "Triển khai chưa thường xuyên; việc phát hiện, xử lý vi phạm còn hạn chế",
-        "Có phát hiện vi phạm nhưng việc xử lý chưa kịp thời hoặc chưa đầy đủ",
-        "Không triển khai công tác thanh tra, kiểm tra"
-      ]
-    },
-    {
-      "noiDung": "Câu 27. Ông/bà cho biết các hình thức xử lý vi phạm pháp luật về an toàn thực phẩm mà cơ quan có thẩm quyền đã áp dụng thời gian qua? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Xử lý vi phạm hành chính",
-        "Xử lý hình sự",
-        "Chưa phát hiện/chưa áp dụng hình thức xử lý",
-        "Không biết"
-      ]
-    },
-    {
-      "noiDung": "Câu 28. Ông/bà đánh giá về tính kịp thời, hiệu quả và những khó khăn khi áp dụng các quy định mới của Nghị định số 90/2026/NĐ-CP trong việc xử lý vi phạm an toàn thực phẩm?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Kịp thời, hiệu quả, đáp ứng yêu cầu về xử lý hành vi vi phạm",
-        "Chưa kịp thời, chưa hiệu quả, còn có khó khăn vướng mắc"
-      ]
-    },
-    {
-      "noiDung": "Câu 29. Theo ông/bà, nguyên nhân chủ yếu dẫn đến vi phạm pháp luật về an toàn thực phẩm là gì? (có thể lựa chọn nhiều phương án)",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Hệ thống pháp luật còn có hạn chế, bất cập",
-        "Ý thức chấp hành pháp luật của một số cơ sở sản xuất, kinh doanh còn hạn chế",
-        "Nhận thức và thói quen tiêu dùng của một bộ phận người dân còn hạn chế; chưa quan tâm đầy đủ đến nguồn gốc, nhãn hàng hóa, hạn sử dụng, chất lượng sản phẩm và nội dung quảng cáo khi lựa chọn, sử dụng thực phẩm",
-        "Công tác tuyên truyền, phổ biến pháp luật chưa thường xuyên, chưa dễ hiểu",
-        "Công tác kiểm tra, xử lý vi phạm chưa thường xuyên hoặc chưa đủ sức răn đe",
-        "Việc kinh doanh thực phẩm chức năng qua mạng xã hội, thương mại điện tử, hàng “xách tay” khó kiểm soát nguồn gốc, chất lượng và chủ thể vi phạm",
-        "Công tác lấy mẫu, kiểm nghiệm, công khai kết quả kiểm nghiệm, cảnh báo và thu hồi sản phẩm không bảo đảm an toàn thực phẩm còn hạn chế",
-        "Một số cơ sở nhỏ lẻ, thức ăn đường phố, kinh doanh thời vụ chưa chấp hành nghiêm điều kiện bảo đảm an toàn thực phẩm"
-      ]
-    },
-    {
-      "noiDung": "Câu 30. Ông/bà đánh giá như thế nào về hoạt động phối hợp giữa các cơ quan, đơn vị trong quản lý nhà nước về an toàn thực phẩm thời gian qua?",
-      "maLoaiCauHoi": 3,
-      "isBatBuoc": false,
-      "isLyDoKhac": false,
-      "cauTraLoi": [
-        "Tốt, rõ đầu mối và trách nhiệm phối hợp",
-        "Cơ bản ổn định nhưng còn thiếu cơ chế chia sẻ dữ liệu, thông tin kiểm tra, kiểm nghiệm",
-        "Chưa tốt, còn chồng chéo hoặc bỏ sót đối tượng quản lý",
-        "Không có ý kiến"
-      ]
-    },
-    {
-      "noiDung": "Câu 31. Sau khi thực hiện mô hình chính quyền địa phương 02 cấp, việc xác định thẩm quyền, đầu mối và trách nhiệm quản lý nhà nước về an toàn thực phẩm tại địa phương như thế nào?",
-      "maLoaiCauHoi": 6,
-      "isBatBuoc": false,
-      "cauTraLoi": [
-        "Tốt/ổn định",
-        "Còn khó khăn"
-      ],
-      "cauHoiCon": [
-        {
-          "noiDung": "Bàn giao hồ sơ, dữ liệu quản lý cơ sở an toàn thực phẩm giữa các cơ quan, đơn vị, địa bàn.",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Xác định thẩm quyền kiểm tra, xử phạt vi phạm hành chính và trách nhiệm theo dõi địa bàn theo mô hình tổ chức mới.",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Phân công đầu mối quản lý đối với thực phẩm chức năng, kiểm nghiệm thực phẩm và cơ sở không thuộc diện cấp Giấy chứng nhận.",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Biên chế chuyên trách làm công tác an toàn thực phẩm tại Ủy ban nhân dân cấp xã",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Năng lực của đội ngũ cán bộ kiêm nhiệm phụ trách an toàn thực phẩm ở cấp xã sau khi tinh gọn bộ máy.",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        },
-        {
-          "noiDung": "Cơ chế phối hợp, chia sẻ thông tin giữa cấp tỉnh, cấp xã và các ngành chuyên môn.",
-          "maLoaiCauHoi": 3,
-          "isBatBuoc": false,
-          "cauTraLoi": []
-        }
-      ]
-    },
-    {
-      "noiDung": "Câu 32. Theo ông/bà, cần có giải pháp gì để nâng cao hiệu lực, hiệu quả quản lý nhà nước về thực phẩm chức năng, kiểm nghiệm thực phẩm và quản lý cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm?",
-      "maLoaiCauHoi": 2,
-      "isBatBuoc": false,
-      "isLyDoKhac": true,
-      "cauTraLoi": [
-        "Hoàn thiện, sửa đổi, bổ sung quy định pháp luật theo hướng thống nhất, rõ trách nhiệm, dễ áp dụng trong thực tiễn quản lý tại địa phương",
-        "Quy định rõ hơn trách nhiệm quản lý, phân công đầu mối, cơ chế phối hợp giữa các ngành, các cấp trong mô hình chính quyền địa phương 02 cấp sau sáp nhập",
-        "Tăng cường hậu kiểm đối với thực phẩm chức năng, nhất là sản phẩm tự công bố, quảng cáo trên mạng xã hội, thương mại điện tử, livestream",
-        "Siết chặt quản lý quảng cáo thực phẩm chức năng, xử lý nghiêm hành vi quảng cáo sai sự thật, quảng cáo quá công dụng, gây hiểu nhầm sản phẩm có tác dụng như thuốc",
-        "Đầu tư cơ sở vật chất, trang thiết bị, phương tiện kiểm tra cơ động, sinh phẩm, test nhanh, hóa chất phục vụ kiểm nghiệm, kiểm tra nhanh an toàn thực phẩm",
-        "Bảo đảm kinh phí lấy mẫu, gửi mẫu, kiểm nghiệm, hậu kiểm, điều tra, khảo sát và xử lý vi phạm về an toàn thực phẩm",
-        "Nâng cao năng lực phòng kiểm nghiệm, rút ngắn thời gian trả kết quả kiểm nghiệm, đáp ứng yêu cầu xử lý vi phạm, truy xuất nguồn gốc, thu hồi sản phẩm không bảo đảm an toàn",
-        "Kiện toàn, bồi dưỡng, tập huấn chuyên môn chuyên sâu cho đội ngũ cán bộ kiêm nhiệm làm công tác an toàn thực phẩm tại Ủy ban nhân dân cấp xã sau khi thực hiện mô hình sáp nhập, tổ chức lại bộ máy hành chính",
-        "Tăng cường rà soát, thống kê, phân loại, cập nhật dữ liệu cơ sở không thuộc diện cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm",
-        "Đẩy mạnh ký cam kết, kiểm tra sau ký cam kết và hậu kiểm đối với cơ sở nhỏ lẻ, hộ gia đình, kinh doanh thời vụ, thức ăn đường phố, cơ sở trong chợ",
-        "Tăng cường tuyên truyền, tập huấn, hướng dẫn pháp luật về an toàn thực phẩm cho cơ sở sản xuất, kinh doanh và người tiêu dùng",
-        "Bồi dưỡng, tập huấn chuyên môn, nghiệp vụ cho cán bộ làm công tác quản lý an toàn thực phẩm ở cấp cơ sở, nhất là sau sáp nhập, tổ chức lại bộ máy",
-        "Xây dựng cơ sở dữ liệu dùng chung về cơ sở sản xuất, kinh doanh thực phẩm, kết quả kiểm nghiệm, hậu kiểm, xử lý vi phạm và cảnh báo nguy cơ an toàn thực phẩm"
-      ]
-    },
-    {
-      "noiDung": "Câu 33. Ý kiến đề xuất, kiến nghị khác của Ông/Bà nhằm tháo gỡ khó khăn, vướng mắc trong công tác thi hành pháp luật về an toàn thực phẩm tại địa phương (đặc biệt là sau khi thực hiện mô hình chính quyền địa phương 02 cấp)?",
-      "maLoaiCauHoi": 4,
-      "isBatBuoc": false
     }
   ]
 }
