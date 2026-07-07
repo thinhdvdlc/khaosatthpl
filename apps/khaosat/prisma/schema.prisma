@@ -1,10 +1,12 @@
 // Mô hình dữ liệu khảo sát — đặt tên theo hệ thống tham chiếu (dieutradlxh.tuyengiaodanvan.vn)
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  // native: chạy local; rhel-openssl-3.0.x: runtime serverless của Vercel
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 

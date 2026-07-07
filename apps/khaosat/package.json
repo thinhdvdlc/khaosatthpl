@@ -8,7 +8,7 @@
     "dev:server": "node --watch server/index.js",
     "build": "npm --prefix client run build",
     "start": "node server/index.js",
-    "migrate": "prisma migrate deploy",
+    "migrate": "prisma db push --skip-generate",
     "seed": "node prisma/seed.js",
     "test": "vitest run",
     "lint": "echo \"(chưa cấu hình linter)\" && exit 0",

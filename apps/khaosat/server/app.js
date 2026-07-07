@@ -6,8 +6,11 @@ import { PrismaClient } from '@prisma/client'
 import publicRoutes from './routes/public.js'
 import adminRoutes from './routes/admin.js'
 
-// PrismaClient dùng chung cho toàn server (routes import từ đây)
-export const prisma = new PrismaClient()
+// PrismaClient dùng chung cho toàn server (routes import từ đây).
+// Cache trên globalThis để trên môi trường serverless (Vercel) không mở quá nhiều kết nối.
+const globalForPrisma = globalThis
+export const prisma = globalForPrisma.__khaosatPrisma ?? new PrismaClient()
+if (!globalForPrisma.__khaosatPrisma) globalForPrisma.__khaosatPrisma = prisma
 
 const app = express()
 app.use(express.json({ limit: '2mb' }))

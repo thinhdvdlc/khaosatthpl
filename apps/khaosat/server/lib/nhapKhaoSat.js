@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto'
 import { LOAI, maLoai } from './loaiCauHoi.js'
 
 // Chuyển giá trị ngày (string ISO hoặc Date) về Date | null
@@ -6,33 +7,22 @@ function veNgay(v) {
   return v instanceof Date ? v : new Date(v)
 }
 
-// Tạo đệ quy danh sách câu hỏi (dùng chung cho taoKhaoSat và PUT cập nhật câu hỏi)
-export async function taoCauHois(tx, khaoSatId, cauHois, cauHoiChaId = null, giuId = false) {
-  for (let i = 0; i < cauHois.length; i++) {
-    const ch = cauHois[i]
-    const ma = maLoai(ch)
+// Làm phẳng cây câu hỏi thành các "tầng" (theo độ sâu) + danh sách phương án,
+// gán sẵn id để tạo bằng createMany (không cần transaction tương tác dài — hợp Prisma Postgres).
+// Trả về { tang: [[cấp0], [cấp1], ...], cauTraLoi: [...] }.
+function lamPhang(cauHois, khaoSatId, giuId, rootChaId = null) {
+  const tang = []
+  const cauTraLoi = []
 
-    let cauTraLoi = (ch.cauTraLoi || []).map((a, j) => {
-      if (typeof a === 'string') return { noiDung: a, thuTu: j + 1 }
-      return {
-        ...(giuId && a.id ? { id: a.id } : {}),
-        noiDung: a.noiDung,
-        thuTu: a.thuTu ?? j + 1,
-      }
-    })
-    // YES_NO không khai báo phương án → tự tạo Có / Không
-    if (ma === LOAI.YES_NO && cauTraLoi.length === 0) {
-      cauTraLoi = [
-        { noiDung: 'Có', thuTu: 1 },
-        { noiDung: 'Không', thuTu: 2 },
-      ]
-    }
-
-    const tao = await tx.cauHoi.create({
-      data: {
-        ...(giuId && ch.id ? { id: ch.id } : {}),
+  function duyet(ds, chaId, doSau) {
+    if (!tang[doSau]) tang[doSau] = []
+    ds.forEach((ch, i) => {
+      const ma = maLoai(ch)
+      const id = giuId && ch.id ? ch.id : randomUUID()
+      tang[doSau].push({
+        id,
         khaoSatId,
-        cauHoiChaId,
+        cauHoiChaId: chaId,
         noiDung: ch.noiDung,
         maLoaiCauHoi: ma,
         isBatBuoc: ch.isBatBuoc ?? false,
@@ -41,47 +31,81 @@ export async function taoCauHois(tx, khaoSatId, cauHois, cauHoiChaId = null, giu
         soLuongTraLoiMin: ch.soLuongTraLoiMin ?? null,
         soLuongTraLoiMax: ch.soLuongTraLoiMax ?? null,
         maxLength: ch.maxLength ?? null,
-        ...(cauTraLoi.length ? { cauTraLoi: { create: cauTraLoi } } : {}),
-      },
-    })
+      })
 
-    if (ch.cauHoiCon?.length) {
-      await taoCauHois(tx, khaoSatId, ch.cauHoiCon, tao.id, giuId)
-    }
+      let pa = (ch.cauTraLoi || []).map((a, j) =>
+        typeof a === 'string'
+          ? { noiDung: a, thuTu: j + 1 }
+          : { id: giuId && a.id ? a.id : undefined, noiDung: a.noiDung, thuTu: a.thuTu ?? j + 1 }
+      )
+      // YES_NO không khai báo phương án → tự tạo Có / Không
+      if (ma === LOAI.YES_NO && pa.length === 0) {
+        pa = [
+          { noiDung: 'Có', thuTu: 1 },
+          { noiDung: 'Không', thuTu: 2 },
+        ]
+      }
+      for (const a of pa) {
+        cauTraLoi.push({
+          ...(a.id ? { id: a.id } : { id: randomUUID() }),
+          cauHoiId: id,
+          noiDung: a.noiDung,
+          thuTu: a.thuTu,
+        })
+      }
+
+      if (ch.cauHoiCon?.length) duyet(ch.cauHoiCon, id, doSau + 1)
+    })
   }
+
+  duyet(cauHois || [], rootChaId, 0)
+  return { tang: tang.filter((t) => t && t.length), cauTraLoi }
 }
 
-// Tạo khảo sát từ payload dạng builder — trả về id khảo sát
+// Tạo danh sách câu hỏi (dùng cho admin PUT — client có thể là tx hoặc prisma).
+// Chạy createMany theo từng tầng để thoả ràng buộc khoá ngoại cha–con.
+export async function taoCauHois(client, khaoSatId, cauHois, cauHoiChaId = null, giuId = false) {
+  const { tang, cauTraLoi } = lamPhang(cauHois, khaoSatId, giuId, cauHoiChaId)
+  for (const cap of tang) await client.cauHoi.createMany({ data: cap })
+  if (cauTraLoi.length) await client.cauTraLoi.createMany({ data: cauTraLoi })
+}
+
+// Tạo khảo sát từ payload dạng builder — trả về id khảo sát.
+// Dùng transaction DẠNG MẢNG (batched) thay vì callback: nhanh, ít round-trip,
+// không vướng giới hạn transaction tương tác của Prisma Postgres/serverless.
 export async function taoKhaoSat(prisma, payload, { giuId = false } = {}) {
-  return prisma.$transaction(
-    async (tx) => {
-      const ks = await tx.khaoSat.create({
-        data: {
-          ...(giuId && payload.id ? { id: payload.id } : {}),
-          tieuDe: payload.tieuDe,
-          header: payload.header ?? null,
-          footer: payload.footer ?? null,
-          logo: payload.logo ?? null,
-          ...(payload.background != null ? { background: payload.background } : {}),
-          thoiGianBatDau: veNgay(payload.thoiGianBatDau),
-          thoiGianKetThuc: veNgay(payload.thoiGianKetThuc),
-          isActive: payload.isActive ?? true,
-          isViewKQ: payload.isViewKQ ?? false,
-          isNhapThongTin: payload.isNhapThongTin ?? false,
-          isNhapThongTinRequired: payload.isNhapThongTinRequired ?? false,
-          isTen: payload.isTen ?? false,
-          isEmail: payload.isEmail ?? false,
-          isDienThoai: payload.isDienThoai ?? false,
-          isNamSinh: payload.isNamSinh ?? false,
-          isDiaChi: payload.isDiaChi ?? false,
-          isGioiTinh: payload.isGioiTinh ?? false,
-        },
-      })
-      await taoCauHois(tx, ks.id, payload.cauHois || [], null, giuId)
-      return ks.id
-    },
-    { timeout: 30000 }
-  )
+  const ksId = giuId && payload.id ? payload.id : randomUUID()
+  const { tang, cauTraLoi } = lamPhang(payload.cauHois || [], ksId, giuId)
+
+  const ops = [
+    prisma.khaoSat.create({
+      data: {
+        id: ksId,
+        tieuDe: payload.tieuDe,
+        header: payload.header ?? null,
+        footer: payload.footer ?? null,
+        logo: payload.logo ?? null,
+        ...(payload.background != null ? { background: payload.background } : {}),
+        thoiGianBatDau: veNgay(payload.thoiGianBatDau),
+        thoiGianKetThuc: veNgay(payload.thoiGianKetThuc),
+        isActive: payload.isActive ?? true,
+        isViewKQ: payload.isViewKQ ?? false,
+        isNhapThongTin: payload.isNhapThongTin ?? false,
+        isNhapThongTinRequired: payload.isNhapThongTinRequired ?? false,
+        isTen: payload.isTen ?? false,
+        isEmail: payload.isEmail ?? false,
+        isDienThoai: payload.isDienThoai ?? false,
+        isNamSinh: payload.isNamSinh ?? false,
+        isDiaChi: payload.isDiaChi ?? false,
+        isGioiTinh: payload.isGioiTinh ?? false,
+      },
+    }),
+  ]
+  for (const cap of tang) ops.push(prisma.cauHoi.createMany({ data: cap }))
+  if (cauTraLoi.length) ops.push(prisma.cauTraLoi.createMany({ data: cauTraLoi }))
+
+  await prisma.$transaction(ops)
+  return ksId
 }
 
 // Chuẩn hoá đệ quy câu hỏi của JSON hệ thống tham chiếu — bỏ câu hỏi isActive === false
