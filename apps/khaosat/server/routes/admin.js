@@ -147,14 +147,11 @@ router.patch(
   })
 )
 
-// Xoá khảo sát (cascade toàn bộ câu hỏi + kết quả)
+// Không cho xoá khảo sát — chỉ cho phép khoá/mở (PATCH isActive).
 router.delete(
   '/khaosats/:id',
   xuLy(async (req, res) => {
-    const khaoSat = await prisma.khaoSat.findUnique({ where: { id: req.params.id } })
-    if (!khaoSat) return res.status(404).json({ message: 'Không tìm thấy khảo sát' })
-    await prisma.khaoSat.delete({ where: { id: khaoSat.id } })
-    res.json({ message: 'Đã xóa khảo sát' })
+    res.status(403).json({ message: 'Không hỗ trợ xoá khảo sát. Vui lòng dùng chức năng Khóa.' })
   })
 )
 

@@ -233,18 +233,6 @@ export default function QuanTri() {
     }
   }
 
-  async function xoaKhaoSat(ks) {
-    if (!window.confirm('Xóa khảo sát và toàn bộ phiếu trả lời?')) return
-    try {
-      await goiAdmin(`/api/v1/admin/khaosats/${ks.id}`, { method: 'DELETE' })
-      setThongBao({ loai: 'ok', noiDung: `Đã xóa khảo sát "${ks.tieuDe}".` })
-      if (phieuCua && phieuCua.id === ks.id) setPhieuCua(null)
-      taiDanhSach()
-    } catch (e) {
-      if (e.status !== 401) setThongBao({ loai: 'loi', noiDung: e.message || 'Xóa thất bại.' })
-    }
-  }
-
   // ----- form tạo/sửa -----
   function moTaoMoi() {
     setFormBanDau(modelMoi())
@@ -412,13 +400,6 @@ export default function QuanTri() {
                               </button>
                               <button type="button" className="nut nut-nho" onClick={() => doiCo(ks, 'isViewKQ')}>
                                 Công khai KQ: {ks.isViewKQ ? 'Bật' : 'Tắt'}
-                              </button>
-                              <button
-                                type="button"
-                                className="nut nut-nho nut-nguy-hiem"
-                                onClick={() => xoaKhaoSat(ks)}
-                              >
-                                Xóa
                               </button>
                             </div>
                           </td>
