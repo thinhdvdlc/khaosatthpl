@@ -102,7 +102,8 @@ export function thongTinPhieu(tieuDe = '') {
   const so = m ? Number(m[1]) : null
   let doiTuong = ''
   if (/cán bộ|công chức|viên chức/i.test(tieuDe))
-    doiTuong = 'Dành cho cán bộ, công chức, viên chức trên địa bàn tỉnh'
+    doiTuong =
+      'Dành cho cán bộ, công chức, viên chức làm nhiệm vụ quản lý nhà nước về an toàn thực phẩm trên địa bàn tỉnh'
   else if (/người (dân|tiêu dùng)|hộ (gia đình|kinh doanh)|nhỏ lẻ/i.test(tieuDe))
     doiTuong = 'Dành cho người tiêu dùng, hộ gia đình, cơ sở sản xuất, kinh doanh thực phẩm nhỏ lẻ'
   return { so, doiTuong }
